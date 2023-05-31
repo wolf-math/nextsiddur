@@ -1,0 +1,21 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from './NavMenu.module.css';
+
+export default function NavMenu() {
+  return (
+    <nav className={styles.nav}>
+      <Link href='/'>
+        <Image src='/siddur.svg' width={80} height={80} alt='next siddur' />
+      </Link>
+      <ul className={styles.links}>
+        <li>
+          <Link href={'/dashboard'}>Dashboard</Link>
+        </li>
+        <li>
+          <Link href={'/login'}>Log In</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+}

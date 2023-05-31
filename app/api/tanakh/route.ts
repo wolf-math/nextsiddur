@@ -1,0 +1,1 @@
+import { genesis } from './genesis';
