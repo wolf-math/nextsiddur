@@ -1,1 +1,1 @@
-import { genesis } from './genesis';
+import { genesis } from './torah/genesis';
