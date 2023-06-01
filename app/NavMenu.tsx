@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './NavMenu.module.css';
+import { SignInButton, SignOutButton } from '@/components/buttons';
 
 export default function NavMenu() {
   return (
@@ -13,7 +14,10 @@ export default function NavMenu() {
           <Link href={'/dashboard'}>Dashboard</Link>
         </li>
         <li>
-          <Link href={'/login'}>Log In</Link>
+          <SignInButton />
+        </li>
+        <li>
+          <SignOutButton />
         </li>
       </ul>
     </nav>
