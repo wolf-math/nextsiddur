@@ -1,6 +1,6 @@
 export const chronicles1 = {
   heTitle: 'דברי הימים א',
-  nikkud: [
+  niqqud: [
     [
       'אָדָם שֵׁת אֱנוֹשׁ׃',
       'קֵינָן מַהֲלַלְאֵל יָרֶד׃',
