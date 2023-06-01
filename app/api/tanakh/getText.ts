@@ -44,58 +44,64 @@ import { chronicles1 } from './chronicles1';
 import { chronicles2 } from './chronicles2';
 
 const tanakh = {
-  nikkud: {
+  niqqud: {
     tanakh: {
+      title: 'tanakh',
+      heTitle: 'תָּנָ״ךְ',
       torah: {
-        genesis: genesis.nikkud,
-        exodus: exodus.nikkud,
-        leviticus: leviticus.nikkud,
-        numbers: numbers.nikkud,
-        deuteronomy: deuteronomy.nikkud
+        genesis: genesis.niqqud,
+        exodus: exodus.niqqud,
+        leviticus: leviticus.niqqud,
+        numbers: numbers.niqqud,
+        deuteronomy: deuteronomy.niqqud
       },
       prophets: {
-        joshua: joshua.nikkud,
-        judges: judges.nikkud,
-        samuel1: samuel1.nikkud,
-        samuel2: samuel2.nikkud,
-        kings1: kings1.nikkud,
-        kings2: kings2.nikkud,
-        isaiah: isaiah.nikkud,
-        jeremiah: jeremiah.nikkud,
-        ezekiel: ezekiel.nikkud,
-        hosea: hosea.nikkud,
-        joel: joel.nikkud,
-        amos: amos.nikkud,
-        obadaiah: obadaiah.nikkud,
-        jonah: jonah.nikkud,
-        micah: micah.nikkud,
-        nahum: nahum.nikkud,
-        habakkuk: habakkuk.nikkud,
-        zephaniah: zephaniah.nikkud,
-        haggai: haggai.nikkud,
-        zechariah: zechariah.nikkud,
-        malachi: malachi.nikkud
+        joshua: joshua.niqqud,
+        judges: judges.niqqud,
+        samuel1: samuel1.niqqud,
+        samuel2: samuel2.niqqud,
+        kings1: kings1.niqqud,
+        kings2: kings2.niqqud,
+        isaiah: isaiah.niqqud,
+        jeremiah: jeremiah.niqqud,
+        ezekiel: ezekiel.niqqud,
+        hosea: hosea.niqqud,
+        joel: joel.niqqud,
+        amos: amos.niqqud,
+        obadaiah: obadaiah.niqqud,
+        jonah: jonah.niqqud,
+        micah: micah.niqqud,
+        nahum: nahum.niqqud,
+        habakkuk: habakkuk.niqqud,
+        zephaniah: zephaniah.niqqud,
+        haggai: haggai.niqqud,
+        zechariah: zechariah.niqqud,
+        malachi: malachi.niqqud
       },
       writings: {
-        psalms: psalms.nikkud,
-        proverbs: proverbs.nikkud,
-        job: job.nikkud,
-        songofsongs: songofsongs.nikkud,
-        ruth: ruth.nikkud,
-        lamentations: lamentations.nikkud,
-        ecclesiastes: ecclesiastes.nikkud,
-        esther: esther.nikkud,
-        daniel: daniel.nikkud,
-        ezra: ezra.nikkud,
-        nehemiah: nehemiah.nikkud,
-        chronicles1: chronicles1.nikkud,
-        chronicles2: chronicles2.nikkud
+        psalms: psalms.niqqud,
+        proverbs: proverbs.niqqud,
+        job: job.niqqud,
+        songofsongs: songofsongs.niqqud,
+        ruth: ruth.niqqud,
+        lamentations: lamentations.niqqud,
+        ecclesiastes: ecclesiastes.niqqud,
+        esther: esther.niqqud,
+        daniel: daniel.niqqud,
+        ezra: ezra.niqqud,
+        nehemiah: nehemiah.niqqud,
+        chronicles1: chronicles1.niqqud,
+        chronicles2: chronicles2.niqqud
       }
     }
   },
   plain: {
     tanakh: {
+      title: 'tanakh',
+      heTitle: 'תָּנָ״ךְ',
       torah: {
+        name: genesis.title,
+        heTitle: genesis.heTitle,
         genesis: genesis.plain,
         exodus: exodus.plain,
         leviticus: leviticus.plain,
@@ -144,7 +150,11 @@ const tanakh = {
   },
 
   taameiHaMiqra: {
-    tanakh: {
+    title: 'tanakh',
+    heTitle: 'תָּנָ״ךְ',
+    torah: {
+      name: genesis.title,
+      heTitle: genesis.heTitle,
       torah: {
         genesis: genesis.taameiHaMiqra,
         exodus: exodus.taameiHaMiqra,
@@ -196,10 +206,13 @@ const tanakh = {
 
 interface Params {
   book: string;
-  type: string;
+  section: string;
 }
 
-export default function getVal(section: string, book: string): any {
+export default function getVal(
+  section: string,
+  book: string
+): object | undefined {
   // @ts-ignore
   const sectionObj = tanakh[section];
   if (!sectionObj) {
