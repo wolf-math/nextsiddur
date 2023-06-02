@@ -49,17 +49,57 @@ const tanakh = {
       title: 'tanakh',
       heTitle: 'תָּנָ״ךְ',
       torah: {
-        genesis: genesis.niqqud,
-        exodus: exodus.niqqud,
-        leviticus: leviticus.niqqud,
-        numbers: numbers.niqqud,
-        deuteronomy: deuteronomy.niqqud
+        title: 'torah',
+        heTitle: 'תּוֹרָה',
+        genesis: {
+          title: genesis.title,
+          heTitle: genesis.heTitle,
+          text: genesis.niqqud
+        },
+        exodus: {
+          title: 'exodus',
+          heTitle: exodus.heTitle,
+          text: exodus.niqqud
+        },
+        leviticus: {
+          title: 'leviticus',
+          heTitle: leviticus.heTitle,
+          text: leviticus.niqqud
+        },
+        numbers: {
+          title: 'numbers',
+          heTitle: numbers.heTitle,
+          text: numbers.niqqud
+        },
+        deuteronomy: {
+          title: 'deuteronomy',
+          heTitle: deuteronomy.heTitle,
+          text: deuteronomy.niqqud
+        }
       },
       prophets: {
-        joshua: joshua.niqqud,
-        judges: judges.niqqud,
-        samuel1: samuel1.niqqud,
-        samuel2: samuel2.niqqud,
+        title: 'prophets',
+        heTitle: 'נְבִיאִים',
+        joshua: {
+          title: 'joshua',
+          heTitle: joshua.heTitle,
+          text: joshua.niqqud
+        },
+        judges: {
+          title: 'judges',
+          heTitle: judges.heTitle,
+          text: judges.niqqud
+        },
+        samuel1: {
+          title: 'samuel 1',
+          heTitle: samuel1.heTitle,
+          text: samuel1.niqqud
+        },
+        samuel2: {
+          title: 'samuel 2',
+          heTitle: samuel2.heTitle,
+          text: samuel2.niqqud
+        },
         kings1: kings1.niqqud,
         kings2: kings2.niqqud,
         isaiah: isaiah.niqqud,
