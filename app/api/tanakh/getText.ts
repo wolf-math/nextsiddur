@@ -100,38 +100,158 @@ const tanakh = {
           heTitle: samuel2.heTitle,
           text: samuel2.niqqud
         },
-        kings1: kings1.niqqud,
-        kings2: kings2.niqqud,
-        isaiah: isaiah.niqqud,
-        jeremiah: jeremiah.niqqud,
-        ezekiel: ezekiel.niqqud,
-        hosea: hosea.niqqud,
-        joel: joel.niqqud,
-        amos: amos.niqqud,
-        obadaiah: obadaiah.niqqud,
-        jonah: jonah.niqqud,
-        micah: micah.niqqud,
-        nahum: nahum.niqqud,
-        habakkuk: habakkuk.niqqud,
-        zephaniah: zephaniah.niqqud,
-        haggai: haggai.niqqud,
-        zechariah: zechariah.niqqud,
-        malachi: malachi.niqqud
+        kings1: {
+          title: 'kings 1',
+          heTitle: kings1.heTitle,
+          text: kings1.niqqud
+        },
+        kings2: {
+          title: 'kings 2',
+          heTitle: kings2.heTitle,
+          text: kings2.niqqud
+        },
+        isaiah: {
+          title: 'isaiah',
+          heTitle: isaiah.heTitle,
+          text: isaiah.niqqud
+        },
+        jeremiah: {
+          title: 'jeremiah',
+          heTitle: jeremiah.heTitle,
+          text: jeremiah.niqqud
+        },
+        ezekiel: {
+          title: 'ezekiel',
+          heTitle: ezekiel.heTitle,
+          text: ezekiel.niqqud
+        },
+        hosea: {
+          title: 'hosea',
+          heTitle: hosea.heTitle,
+          text: hosea.niqqud
+        },
+        joel: {
+          title: 'joel',
+          heTitle: joel.heTitle,
+          text: joel.niqqud
+        },
+        amos: {
+          title: 'amos',
+          heTitle: amos.heTitle,
+          text: amos.niqqud
+        },
+        obadaiah: {
+          title: 'obadaiah',
+          heTitle: obadaiah.heTitle,
+          text: obadaiah.niqqud
+        },
+        jonah: {
+          title: 'jonah',
+          heTitle: jonah.heTitle,
+          text: jonah.niqqud
+        },
+        micah: {
+          title: 'micah',
+          heTitle: micah.heTitle,
+          text: micah.niqqud
+        },
+        nahum: {
+          title: 'nahum',
+          heTitle: nahum.heTitle,
+          text: nahum.niqqud
+        },
+        habakkuk: {
+          title: 'habakkuk',
+          heTitle: habakkuk.heTitle,
+          text: habakkuk.niqqud
+        },
+        zephaniah: {
+          title: 'zephaniah',
+          heTitle: zephaniah.heTitle,
+          text: zephaniah.niqqud
+        },
+        haggai: {
+          title: 'obadaiah',
+          heTitle: obadaiah.heTitle,
+          text: obadaiah.niqqud
+        },
+        zechariah: {
+          title: 'zechariah',
+          heTitle: zechariah.heTitle,
+          text: zechariah.niqqud
+        },
+        malachi: {
+          title: 'malachi',
+          heTitle: malachi.heTitle,
+          text: malachi.niqqud
+        }
       },
       writings: {
-        psalms: psalms.niqqud,
-        proverbs: proverbs.niqqud,
-        job: job.niqqud,
-        songofsongs: songofsongs.niqqud,
-        ruth: ruth.niqqud,
-        lamentations: lamentations.niqqud,
-        ecclesiastes: ecclesiastes.niqqud,
-        esther: esther.niqqud,
-        daniel: daniel.niqqud,
-        ezra: ezra.niqqud,
-        nehemiah: nehemiah.niqqud,
-        chronicles1: chronicles1.niqqud,
-        chronicles2: chronicles2.niqqud
+        psalms: {
+          title: 'psalms',
+          heTitle: psalms.heTitle,
+          text: psalms.niqqud
+        },
+        proverbs: {
+          title: 'proverbs',
+          heTitle: proverbs.heTitle,
+          text: proverbs.niqqud
+        },
+        job: {
+          title: 'job',
+          heTitle: job.heTitle,
+          text: job.niqqud
+        },
+        songofsongs: {
+          title: 'song of songs',
+          heTitle: songofsongs.heTitle,
+          text: songofsongs.niqqud
+        },
+        ruth: {
+          title: 'ruth',
+          heTitle: ruth.heTitle,
+          text: ruth.niqqud
+        },
+        lamentations: {
+          title: 'lamentations',
+          heTitle: lamentations.heTitle,
+          text: lamentations.niqqud
+        },
+        ecclesiastes: {
+          title: 'ecclesiastes',
+          heTitle: ecclesiastes.heTitle,
+          text: ecclesiastes.niqqud
+        },
+        esther: {
+          title: 'esther',
+          heTitle: esther.heTitle,
+          text: esther.niqqud
+        },
+        daniel: {
+          title: 'daniel',
+          heTitle: daniel.heTitle,
+          text: daniel.niqqud
+        },
+        ezra: {
+          title: 'ezra',
+          heTitle: ezra.heTitle,
+          text: ezra.niqqud
+        },
+        nehemiah: {
+          title: 'nehemiah',
+          heTitle: nehemiah.heTitle,
+          text: nehemiah.niqqud
+        },
+        chronicles1: {
+          title: 'chronicles 1',
+          heTitle: chronicles1.heTitle,
+          text: chronicles1.niqqud
+        },
+        chronicles2: {
+          title: 'chronicles 2',
+          heTitle: chronicles2.heTitle,
+          text: chronicles2.niqqud
+        }
       }
     }
   },
@@ -140,105 +260,420 @@ const tanakh = {
       title: 'tanakh',
       heTitle: 'תָּנָ״ךְ',
       torah: {
-        name: genesis.title,
-        heTitle: genesis.heTitle,
-        genesis: genesis.plain,
-        exodus: exodus.plain,
-        leviticus: leviticus.plain,
-        numbers: numbers.plain,
-        deuteronomy: deuteronomy.plain
+        title: 'torah',
+        heTitle: 'תּוֹרָה',
+        genesis: {
+          title: genesis.title,
+          heTitle: genesis.heTitle,
+          text: genesis.plain
+        },
+        exodus: {
+          title: 'exodus',
+          heTitle: exodus.heTitle,
+          text: exodus.plain
+        },
+        leviticus: {
+          title: 'leviticus',
+          heTitle: leviticus.heTitle,
+          text: leviticus.plain
+        },
+        numbers: {
+          title: 'numbers',
+          heTitle: numbers.heTitle,
+          text: numbers.plain
+        },
+        deuteronomy: {
+          title: 'deuteronomy',
+          heTitle: deuteronomy.heTitle,
+          text: deuteronomy.plain
+        }
       },
       prophets: {
-        joshua: joshua.plain,
-        judges: judges.plain,
-        samuel1: samuel1.plain,
-        samuel2: samuel2.plain,
-        kings1: kings1.plain,
-        kings2: kings2.plain,
-        isaiah: isaiah.plain,
-        jeremiah: jeremiah.plain,
-        ezekiel: ezekiel.plain,
-        hosea: hosea.plain,
-        joel: joel.plain,
-        amos: amos.plain,
-        obadaiah: obadaiah.plain,
-        jonah: jonah.plain,
-        micah: micah.plain,
-        nahum: nahum.plain,
-        habakkuk: habakkuk.plain,
-        zephaniah: zephaniah.plain,
-        haggai: haggai.plain,
-        zechariah: zechariah.plain,
-        malachi: malachi.plain
+        title: 'prophets',
+        heTitle: 'נְבִיאִים',
+        joshua: {
+          title: 'joshua',
+          heTitle: joshua.heTitle,
+          text: joshua.plain
+        },
+        judges: {
+          title: 'judges',
+          heTitle: judges.heTitle,
+          text: judges.plain
+        },
+        samuel1: {
+          title: 'samuel 1',
+          heTitle: samuel1.heTitle,
+          text: samuel1.plain
+        },
+        samuel2: {
+          title: 'samuel 2',
+          heTitle: samuel2.heTitle,
+          text: samuel2.plain
+        },
+        kings1: {
+          title: 'kings 1',
+          heTitle: kings1.heTitle,
+          text: kings1.plain
+        },
+        kings2: {
+          title: 'kings 2',
+          heTitle: kings2.heTitle,
+          text: kings2.plain
+        },
+        isaiah: {
+          title: 'isaiah',
+          heTitle: isaiah.heTitle,
+          text: isaiah.plain
+        },
+        jeremiah: {
+          title: 'jeremiah',
+          heTitle: jeremiah.heTitle,
+          text: jeremiah.plain
+        },
+        ezekiel: {
+          title: 'ezekiel',
+          heTitle: ezekiel.heTitle,
+          text: ezekiel.plain
+        },
+        hosea: {
+          title: 'hosea',
+          heTitle: hosea.heTitle,
+          text: hosea.plain
+        },
+        joel: {
+          title: 'joel',
+          heTitle: joel.heTitle,
+          text: joel.plain
+        },
+        amos: {
+          title: 'amos',
+          heTitle: amos.heTitle,
+          text: amos.plain
+        },
+        obadaiah: {
+          title: 'obadaiah',
+          heTitle: obadaiah.heTitle,
+          text: obadaiah.plain
+        },
+        jonah: {
+          title: 'jonah',
+          heTitle: jonah.heTitle,
+          text: jonah.plain
+        },
+        micah: {
+          title: 'micah',
+          heTitle: micah.heTitle,
+          text: micah.plain
+        },
+        nahum: {
+          title: 'nahum',
+          heTitle: nahum.heTitle,
+          text: nahum.plain
+        },
+        habakkuk: {
+          title: 'habakkuk',
+          heTitle: habakkuk.heTitle,
+          text: habakkuk.plain
+        },
+        zephaniah: {
+          title: 'zephaniah',
+          heTitle: zephaniah.heTitle,
+          text: zephaniah.plain
+        },
+        haggai: {
+          title: 'obadaiah',
+          heTitle: obadaiah.heTitle,
+          text: obadaiah.plain
+        },
+        zechariah: {
+          title: 'zechariah',
+          heTitle: zechariah.heTitle,
+          text: zechariah.plain
+        },
+        malachi: {
+          title: 'malachi',
+          heTitle: malachi.heTitle,
+          text: malachi.plain
+        }
       },
       writings: {
-        psalms: psalms.plain,
-        proverbs: proverbs.plain,
-        job: job.plain,
-        songofsongs: songofsongs.plain,
-        ruth: ruth.plain,
-        lamentations: lamentations.plain,
-        ecclesiastes: ecclesiastes.plain,
-        esther: esther.plain,
-        daniel: daniel.plain,
-        ezra: ezra.plain,
-        nehemiah: nehemiah.plain,
-        chronicles1: chronicles1.plain,
-        chronicles2: chronicles2.plain
+        psalms: {
+          title: 'psalms',
+          heTitle: psalms.heTitle,
+          text: psalms.plain
+        },
+        proverbs: {
+          title: 'proverbs',
+          heTitle: proverbs.heTitle,
+          text: proverbs.plain
+        },
+        job: {
+          title: 'job',
+          heTitle: job.heTitle,
+          text: job.plain
+        },
+        songofsongs: {
+          title: 'song of songs',
+          heTitle: songofsongs.heTitle,
+          text: songofsongs.plain
+        },
+        ruth: {
+          title: 'ruth',
+          heTitle: ruth.heTitle,
+          text: ruth.plain
+        },
+        lamentations: {
+          title: 'lamentations',
+          heTitle: lamentations.heTitle,
+          text: lamentations.plain
+        },
+        ecclesiastes: {
+          title: 'ecclesiastes',
+          heTitle: ecclesiastes.heTitle,
+          text: ecclesiastes.plain
+        },
+        esther: {
+          title: 'esther',
+          heTitle: esther.heTitle,
+          text: esther.plain
+        },
+        daniel: {
+          title: 'daniel',
+          heTitle: daniel.heTitle,
+          text: daniel.plain
+        },
+        ezra: {
+          title: 'ezra',
+          heTitle: ezra.heTitle,
+          text: ezra.plain
+        },
+        nehemiah: {
+          title: 'nehemiah',
+          heTitle: nehemiah.heTitle,
+          text: nehemiah.plain
+        },
+        chronicles1: {
+          title: 'chronicles 1',
+          heTitle: chronicles1.heTitle,
+          text: chronicles1.plain
+        },
+        chronicles2: {
+          title: 'chronicles 2',
+          heTitle: chronicles2.heTitle,
+          text: chronicles2.plain
+        }
       }
     }
   },
-
   taameiHaMiqra: {
-    title: 'tanakh',
-    heTitle: 'תָּנָ״ךְ',
-    torah: {
-      name: genesis.title,
-      heTitle: genesis.heTitle,
+    tanakh: {
+      title: 'tanakh',
+      heTitle: 'תָּנָ״ךְ',
       torah: {
-        genesis: genesis.taameiHaMiqra,
-        exodus: exodus.taameiHaMiqra,
-        leviticus: leviticus.taameiHaMiqra,
-        numbers: numbers.taameiHaMiqra,
-        deuteronomy: deuteronomy.taameiHaMiqra
+        title: 'torah',
+        heTitle: 'תּוֹרָה',
+        genesis: {
+          title: genesis.title,
+          heTitle: genesis.heTitle,
+          text: genesis.taameiHaMiqra
+        },
+        exodus: {
+          title: 'exodus',
+          heTitle: exodus.heTitle,
+          text: exodus.taameiHaMiqra
+        },
+        leviticus: {
+          title: 'leviticus',
+          heTitle: leviticus.heTitle,
+          text: leviticus.taameiHaMiqra
+        },
+        numbers: {
+          title: 'numbers',
+          heTitle: numbers.heTitle,
+          text: numbers.taameiHaMiqra
+        },
+        deuteronomy: {
+          title: 'deuteronomy',
+          heTitle: deuteronomy.heTitle,
+          text: deuteronomy.taameiHaMiqra
+        }
       },
       prophets: {
-        joshua: joshua.taameiHaMiqra,
-        judges: judges.taameiHaMiqra,
-        samuel1: samuel1.taameiHaMiqra,
-        samuel2: samuel2.taameiHaMiqra,
-        kings1: kings1.taameiHaMiqra,
-        kings2: kings2.taameiHaMiqra,
-        isaiah: isaiah.taameiHaMiqra,
-        jeremiah: jeremiah.taameiHaMiqra,
-        ezekiel: ezekiel.taameiHaMiqra,
-        hosea: hosea.taameiHaMiqra,
-        joel: joel.taameiHaMiqra,
-        amos: amos.taameiHaMiqra,
-        obadaiah: obadaiah.taameiHaMiqra,
-        jonah: jonah.taameiHaMiqra,
-        micah: micah.taameiHaMiqra,
-        nahum: nahum.taameiHaMiqra,
-        habakkuk: habakkuk.taameiHaMiqra,
-        zephaniah: zephaniah.taameiHaMiqra,
-        haggai: haggai.taameiHaMiqra,
-        zechariah: zechariah.taameiHaMiqra,
-        malachi: malachi.taameiHaMiqra
+        title: 'prophets',
+        heTitle: 'נְבִיאִים',
+        joshua: {
+          title: 'joshua',
+          heTitle: joshua.heTitle,
+          text: joshua.taameiHaMiqra
+        },
+        judges: {
+          title: 'judges',
+          heTitle: judges.heTitle,
+          text: judges.taameiHaMiqra
+        },
+        samuel1: {
+          title: 'samuel 1',
+          heTitle: samuel1.heTitle,
+          text: samuel1.taameiHaMiqra
+        },
+        samuel2: {
+          title: 'samuel 2',
+          heTitle: samuel2.heTitle,
+          text: samuel2.taameiHaMiqra
+        },
+        kings1: {
+          title: 'kings 1',
+          heTitle: kings1.heTitle,
+          text: kings1.taameiHaMiqra
+        },
+        kings2: {
+          title: 'kings 2',
+          heTitle: kings2.heTitle,
+          text: kings2.taameiHaMiqra
+        },
+        isaiah: {
+          title: 'isaiah',
+          heTitle: isaiah.heTitle,
+          text: isaiah.taameiHaMiqra
+        },
+        jeremiah: {
+          title: 'jeremiah',
+          heTitle: jeremiah.heTitle,
+          text: jeremiah.taameiHaMiqra
+        },
+        ezekiel: {
+          title: 'ezekiel',
+          heTitle: ezekiel.heTitle,
+          text: ezekiel.taameiHaMiqra
+        },
+        hosea: {
+          title: 'hosea',
+          heTitle: hosea.heTitle,
+          text: hosea.taameiHaMiqra
+        },
+        joel: {
+          title: 'joel',
+          heTitle: joel.heTitle,
+          text: joel.taameiHaMiqra
+        },
+        amos: {
+          title: 'amos',
+          heTitle: amos.heTitle,
+          text: amos.taameiHaMiqra
+        },
+        obadaiah: {
+          title: 'obadaiah',
+          heTitle: obadaiah.heTitle,
+          text: obadaiah.taameiHaMiqra
+        },
+        jonah: {
+          title: 'jonah',
+          heTitle: jonah.heTitle,
+          text: jonah.taameiHaMiqra
+        },
+        micah: {
+          title: 'micah',
+          heTitle: micah.heTitle,
+          text: micah.taameiHaMiqra
+        },
+        nahum: {
+          title: 'nahum',
+          heTitle: nahum.heTitle,
+          text: nahum.taameiHaMiqra
+        },
+        habakkuk: {
+          title: 'habakkuk',
+          heTitle: habakkuk.heTitle,
+          text: habakkuk.taameiHaMiqra
+        },
+        zephaniah: {
+          title: 'zephaniah',
+          heTitle: zephaniah.heTitle,
+          text: zephaniah.taameiHaMiqra
+        },
+        haggai: {
+          title: 'obadaiah',
+          heTitle: obadaiah.heTitle,
+          text: obadaiah.taameiHaMiqra
+        },
+        zechariah: {
+          title: 'zechariah',
+          heTitle: zechariah.heTitle,
+          text: zechariah.taameiHaMiqra
+        },
+        malachi: {
+          title: 'malachi',
+          heTitle: malachi.heTitle,
+          text: malachi.taameiHaMiqra
+        }
       },
       writings: {
-        psalms: psalms.taameiHaMiqra,
-        proverbs: proverbs.taameiHaMiqra,
-        job: job.taameiHaMiqra,
-        songofsongs: songofsongs.taameiHaMiqra,
-        ruth: ruth.taameiHaMiqra,
-        lamentations: lamentations.taameiHaMiqra,
-        ecclesiastes: ecclesiastes.taameiHaMiqra,
-        esther: esther.taameiHaMiqra,
-        daniel: daniel.taameiHaMiqra,
-        ezra: ezra.taameiHaMiqra,
-        nehemiah: nehemiah.taameiHaMiqra,
-        chronicles1: chronicles1.taameiHaMiqra,
-        chronicles2: chronicles2.taameiHaMiqra
+        psalms: {
+          title: 'psalms',
+          heTitle: psalms.heTitle,
+          text: psalms.taameiHaMiqra
+        },
+        proverbs: {
+          title: 'proverbs',
+          heTitle: proverbs.heTitle,
+          text: proverbs.taameiHaMiqra
+        },
+        job: {
+          title: 'job',
+          heTitle: job.heTitle,
+          text: job.taameiHaMiqra
+        },
+        songofsongs: {
+          title: 'song of songs',
+          heTitle: songofsongs.heTitle,
+          text: songofsongs.taameiHaMiqra
+        },
+        ruth: {
+          title: 'ruth',
+          heTitle: ruth.heTitle,
+          text: ruth.taameiHaMiqra
+        },
+        lamentations: {
+          title: 'lamentations',
+          heTitle: lamentations.heTitle,
+          text: lamentations.taameiHaMiqra
+        },
+        ecclesiastes: {
+          title: 'ecclesiastes',
+          heTitle: ecclesiastes.heTitle,
+          text: ecclesiastes.taameiHaMiqra
+        },
+        esther: {
+          title: 'esther',
+          heTitle: esther.heTitle,
+          text: esther.taameiHaMiqra
+        },
+        daniel: {
+          title: 'daniel',
+          heTitle: daniel.heTitle,
+          text: daniel.taameiHaMiqra
+        },
+        ezra: {
+          title: 'ezra',
+          heTitle: ezra.heTitle,
+          text: ezra.taameiHaMiqra
+        },
+        nehemiah: {
+          title: 'nehemiah',
+          heTitle: nehemiah.heTitle,
+          text: nehemiah.taameiHaMiqra
+        },
+        chronicles1: {
+          title: 'chronicles 1',
+          heTitle: chronicles1.heTitle,
+          text: chronicles1.taameiHaMiqra
+        },
+        chronicles2: {
+          title: 'chronicles 2',
+          heTitle: chronicles2.heTitle,
+          text: chronicles2.taameiHaMiqra
+        }
       }
     }
   }
