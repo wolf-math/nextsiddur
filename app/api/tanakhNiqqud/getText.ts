@@ -96,9 +96,34 @@ const allBooks = {
 
 interface Params {
   book: string;
+  chapter: number | null;
+  verse: number | null;
 }
 
-export default function getVal(book: string): Params {
+// export default function getVal(
+//   book
+//   chapter = null,
+//   verse = null
+// ): Params {
+//   const text = allBooks[book]
+
+//   if (verse) return text[chapter][verse]
+//   if (chapter) return text[chapter]
+
+//   return text
+
+// }
+
+export default function getVal(
+  book: string,
+  chapter: number | null = null,
+  verse: number | null = null
+): Params {
   // @ts-ignore
-  return allBooks[book];
+  const text = allBooks[book];
+
+  if (verse && chapter) return text.text[chapter - 1][verse - 1];
+  if (chapter) return text.text[chapter - 1];
+
+  return text;
 }
