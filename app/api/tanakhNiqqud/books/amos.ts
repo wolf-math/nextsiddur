@@ -1,4 +1,5 @@
 export const amos = {
+  title: 'amos',
   heTitle: 'עמוס',
   text: [
     [

@@ -13,22 +13,22 @@ export const torah = {
     text: genesis.text
   },
   exodus: {
-    title: 'exodus',
+    title: exodus.title,
     heTitle: exodus.heTitle,
     text: exodus.text
   },
   leviticus: {
-    title: 'leviticus',
+    title: leviticus.title,
     heTitle: leviticus.heTitle,
     text: leviticus.text
   },
   numbers: {
-    title: 'numbers',
+    title: numbers.title,
     heTitle: numbers.heTitle,
     text: numbers.text
   },
   deuteronomy: {
-    title: 'deuteronomy',
+    title: deuteronomy.title,
     heTitle: deuteronomy.heTitle,
     text: deuteronomy.text
   }

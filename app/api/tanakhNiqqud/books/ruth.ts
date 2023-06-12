@@ -1,4 +1,5 @@
 export const ruth = {
+  title: 'ruth',
   heTitle: 'רות',
   text: [
     [

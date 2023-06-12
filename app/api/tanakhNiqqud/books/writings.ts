@@ -13,6 +13,8 @@ import { ruth } from './ruth';
 import { songofsongs } from './songofsongs';
 
 export const writings = {
+  title: 'writings',
+  heTitle: 'כתובים',
   psalms: {
     title: psalms.title,
     heTitle: psalms.heTitle,
