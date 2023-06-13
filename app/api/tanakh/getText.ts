@@ -53,6 +53,7 @@ const allBooks = {
   torah,
   prophets,
   writings,
+
   genesis,
   exodus,
   leviticus,
@@ -96,22 +97,22 @@ const allBooks = {
 
 interface Params {
   book: string;
+  version: string | null;
   chapter: number | null;
   verse: number | null;
-  version: string | null;
 }
 
-export default function getVal(
+export default function getText(
   book: string,
   version: string = 'niqqud',
   chapter: number | null = null,
   verse: number | null = null
 ): Params {
   // @ts-ignore
-  const text = allBooks[book(version)];
+  const text = allBooks[book](version);
 
-  if (verse && chapter) return text[version][chapter - 1][verse - 1];
-  if (chapter) return text[version][chapter - 1];
+  if (verse && chapter) return text.text[chapter - 1][verse - 1];
+  if (chapter) return text.text[chapter - 1];
 
   return text;
 }
