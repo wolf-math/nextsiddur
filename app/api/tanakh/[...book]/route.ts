@@ -13,6 +13,10 @@ export function GET(req: object, { params }: any) {
   // but also have options for something like:
   // `/api/tanakh/job/taameiHaMiqra`
 
+  // also, if params.book[1] is equal to a version type.
+  // i.e. `/api/tanakh/niqqud`
+  // then it should return tanakh niqqud
+
   try {
     const text = getText(book, version, chapter, verse);
     return NextResponse.json(text);
