@@ -1,7 +1,7 @@
-export const daniel = {
-  title: 'daniel',
-  heTitle: 'דניאל',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'בִּשְׁנַת שָׁלוֹשׁ לְמַלְכוּת יְהוֹיָקִים מֶלֶךְ־יְהוּדָה בָּא נְבוּכַדְנֶאצַּר מֶלֶךְ־בָּבֶל יְרוּשָׁלִַם וַיָּצַר עָלֶיהָ׃',
       'וַיִּתֵּן אֲדֹנָי בְּיָדוֹ אֶת־יְהוֹיָקִים מֶלֶךְ־יְהוּדָה וּמִקְצָת כְּלֵי בֵית־הָאֱלֹהִים וַיְבִיאֵם אֶרֶץ־שִׁנְעָר בֵּית אֱלֹהָיו וְאֶת־הַכֵּלִים הֵבִיא בֵּית אוֹצַר אֱלֹהָיו׃',
@@ -1150,4 +1150,12 @@ export const daniel = {
       'ואתה לך לקץ ותנוח ותעמד לגרלך לקץ הימין'
     ]
   ]
+};
+
+export const daniel: Book = (version: string) => {
+  return {
+    title: 'daniel',
+    heTitle: 'דניאל',
+    text: versions[version]
+  };
 };

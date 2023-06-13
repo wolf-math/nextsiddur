@@ -1,7 +1,7 @@
-export const deuteronomy = {
-  title: 'deuteronomy',
-  heTitle: 'דברים',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'אֵלֶּה הַדְּבָרִים אֲשֶׁר דִּבֶּר מֹשֶׁה אֶל־כָּל־יִשְׂרָאֵל בְּעֵבֶר הַיַּרְדֵּן בַּמִּדְבָּר בָּעֲרָבָה מוֹל סוּף בֵּין־פָּארָן וּבֵין־תֹּפֶל וְלָבָן וַחֲצֵרֹת וְדִי זָהָב׃',
       'אַחַד עָשָׂר יוֹם מֵחֹרֵב דֶּרֶךְ הַר־שֵׂעִיר עַד קָדֵשׁ בַּרְנֵעַ׃',
@@ -3079,4 +3079,12 @@ export const deuteronomy = {
       'ולכל היד החזקה ולכל המורא הגדול אשר עשה משה לעיני כל־ישראל'
     ]
   ]
+};
+
+export const deuteronomy: Book = (version: string) => {
+  return {
+    title: 'deuteronomy',
+    heTitle: 'דברים',
+    text: versions[version]
+  };
 };

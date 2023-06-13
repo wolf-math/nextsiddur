@@ -1,7 +1,7 @@
-export const ecclesiastes = {
-  title: 'ecclesiastes',
-  heTitle: 'קהלת',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'דִּבְרֵי קֹהֶלֶת בֶּן־דָּוִד מֶלֶךְ בִּירוּשָׁלִָם׃',
       'הֲבֵל הֲבָלִים אָמַר קֹהֶלֶת הֲבֵל הֲבָלִים הַכֹּל הָבֶל׃',
@@ -745,4 +745,12 @@ export const ecclesiastes = {
       'כי את־כל־מעשה האלהים יבא במשפט על כל־נעלם אם־טוב ואם־רע<br><small>[סוף דבר הכל נשמע את־האלהים ירא ואת־מצותיו שמור כי־זה כל־האדם]</small>'
     ]
   ]
+};
+
+export const ecclesiastes: Book = (version: string) => {
+  return {
+    title: 'ecclesiastes',
+    heTitle: 'קהלת',
+    text: versions[version]
+  };
 };

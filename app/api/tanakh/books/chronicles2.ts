@@ -1,7 +1,7 @@
-export const chronicles2 = {
-  title: 'ii chronicles',
-  heTitle: 'דברי הימים ב',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וַיִּתְחַזֵּק שְׁלֹמֹה בֶן־דָּוִיד עַל־מַלְכוּתוֹ וַיהוָה אֱלֹהָיו עִמּוֹ וַיְגַדְּלֵהוּ לְמָעְלָה׃',
       'וַיֹּאמֶר שְׁלֹמֹה לְכָל־יִשְׂרָאֵל לְשָׂרֵי הָאֲלָפִים וְהַמֵּאוֹת וְלַשֹּׁפְטִים וּלְכֹל נָשִׂיא לְכָל־יִשְׂרָאֵל רָאשֵׁי הָאָבוֹת׃',
@@ -2689,4 +2689,12 @@ export const chronicles2 = {
       'כה־אמר כורש מלך פרס כל־ממלכות הארץ נתן לי יהוה אלהי השמים והוא־פקד עלי לבנות־לו בית בירושלם אשר ביהודה מי־בכם מכל־עמו יהוה אלהיו עמו ויעל'
     ]
   ]
+};
+
+export const chronicles2: Book = (version: string) => {
+  return {
+    title: 'ii chronicles',
+    heTitle: 'דברי הימים ב',
+    text: versions[version]
+  };
 };
