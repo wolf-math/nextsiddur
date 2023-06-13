@@ -1,6 +1,6 @@
-export const joel = {
-  title: 'joel',
-  heTitle: 'יואל',
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
   text: [
     [
       'דְּבַר־יְהוָה אֲשֶׁר הָיָה אֶל־יוֹאֵל בֶּן־פְּתוּאֵל׃',
@@ -250,4 +250,8 @@ export const joel = {
       'ונקיתי דמם לא־נקיתי ויהוה שכן בציון'
     ]
   ]
+};
+
+export const joel: Book = (version: string = 'niqqud') => {
+  return { title: 'joel', heTitle: 'יואל', text: versions[version] };
 };

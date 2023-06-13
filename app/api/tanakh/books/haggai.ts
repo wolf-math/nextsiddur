@@ -1,7 +1,7 @@
-export const haggai = {
-  title: 'haggai',
-  heTitle: 'חגי',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'בִּשְׁנַת שְׁתַּיִם לְדָרְיָוֶשׁ הַמֶּלֶךְ בַּחֹדֶשׁ הַשִּׁשִּׁי בְּיוֹם אֶחָד לַחֹדֶשׁ הָיָה דְבַר־יְהוָה בְּיַד־חַגַּי הַנָּבִיא אֶל־זְרֻבָּבֶל בֶּן־שְׁאַלְתִּיאֵל פַּחַת יְהוּדָה וְאֶל־יְהוֹשֻׁעַ בֶּן־יְהוֹצָדָק הַכֹּהֵן הַגָּדוֹל לֵאמֹר׃',
       'כֹּה אָמַר יְהוָה צְבָאוֹת לֵאמֹר הָעָם הַזֶּה אָמְרוּ לֹא עֶת־בֹּא עֶת־בֵּית יְהוָה לְהִבָּנוֹת׃',
@@ -134,3 +134,15 @@ export const haggai = {
     ]
   ]
 };
+
+export const haggai: Book = (version: string = 'niqqud') => {
+  return { title: 'haggai', heTitle: 'חגי', text: versions[version] };
+};
+
+// import { Book } from './interfaces';
+
+// const versions: Record<string, string[][]> = {}
+
+// export const bewk: Book = (version: string = 'niqqud') => {
+//   return { title: 'bew', heTitle: 'k', text: versions[version] };
+// };

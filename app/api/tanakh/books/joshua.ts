@@ -1,7 +1,7 @@
-export const joshua = {
-  title: 'joshua',
-  heTitle: 'יהושע',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וַיְהִי אַחֲרֵי מוֹת מֹשֶׁה עֶבֶד יְהוָה וַיֹּאמֶר יְהוָה אֶל־יְהוֹשֻׁעַ בִּן־נוּן מְשָׁרֵת מֹשֶׁה לֵאמֹר׃',
       'מֹשֶׁה עַבְדִּי מֵת וְעַתָּה קוּם עֲבֹר אֶת־הַיַּרְדֵּן הַזֶּה אַתָּה וְכָל־הָעָם הַזֶּה אֶל־הָאָרֶץ אֲשֶׁר אָנֹכִי נֹתֵן לָהֶם לִבְנֵי יִשְׂרָאֵל׃',
@@ -2125,4 +2125,8 @@ export const joshua = {
       'ואלעזר בן־אהרן מת ויקברו אתו בגבעת פינחס בנו אשר נתן־לו בהר אפרים'
     ]
   ]
+};
+
+export const joshua: Book = (version: string = 'niqqud') => {
+  return { title: 'joshua', heTitle: 'יהושע', text: versions[version] };
 };

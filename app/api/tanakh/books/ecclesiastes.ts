@@ -747,7 +747,7 @@ const versions: Record<string, string[][]> = {
   ]
 };
 
-export const ecclesiastes: Book = (version: string) => {
+export const ecclesiastes: Book = (version: string = 'niqqud') => {
   return {
     title: 'ecclesiastes',
     heTitle: 'קהלת',

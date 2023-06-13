@@ -3081,7 +3081,7 @@ const versions: Record<string, string[][]> = {
   ]
 };
 
-export const deuteronomy: Book = (version: string) => {
+export const deuteronomy: Book = (version: string = 'niqqud') => {
   return {
     title: 'deuteronomy',
     heTitle: 'דברים',

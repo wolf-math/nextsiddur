@@ -1,6 +1,6 @@
-export const jonah = {
-  title: 'jonah',
-  heTitle: 'יונה',
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
   text: [
     [
       'וַיְהִי דְּבַר־יְהוָה אֶל־יוֹנָה בֶן־אֲמִתַּי לֵאמֹר׃',
@@ -175,4 +175,8 @@ export const jonah = {
       'ואני לא אחוס על־נינוה העיר הגדולה אשר יש־בה הרבה משתים־עשרה רבו אדם אשר לא־ידע בין־ימינו לשמאלו ובהמה רבה'
     ]
   ]
+};
+
+export const jonah: Book = (version: string = 'niqqud') => {
+  return { title: 'jonah', heTitle: 'יונה', text: versions[version] };
 };

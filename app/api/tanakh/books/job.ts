@@ -1,7 +1,7 @@
-export const job = {
-  title: 'job',
-  heTitle: 'איוב',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'אִישׁ הָיָה בְאֶרֶץ־עוּץ אִיּוֹב שְׁמוֹ וְהָיָה הָאִישׁ הַהוּא תָּם וְיָשָׁר וִירֵא אֱלֹהִים וְסָר מֵרָע׃',
       'וַיִּוָּלְדוּ לוֹ שִׁבְעָה בָנִים וְשָׁלוֹשׁ בָּנוֹת׃',
@@ -3469,4 +3469,8 @@ export const job = {
       'וימת איוב זקן ושבע ימים'
     ]
   ]
+};
+
+export const job: Book = (version: string = 'niqqud') => {
+  return { title: 'job', heTitle: 'איוב', text: versions[version] };
 };

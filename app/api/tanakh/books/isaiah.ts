@@ -1,6 +1,6 @@
-export const isaiah = {
-  title: 'isaiah',
-  heTitle: 'ישעיהו',
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
   text: [
     [
       'חֲזוֹן יְשַׁעְיָהוּ בֶן־אָמוֹץ אֲשֶׁר חָזָה עַל־יְהוּדָה וִירוּשָׁלִָם בִּימֵי עֻזִּיָּהוּ יוֹתָם אָחָז יְחִזְקִיָּהוּ מַלְכֵי יְהוּדָה׃',
@@ -4276,4 +4276,8 @@ export const isaiah = {
       'ויצאו וראו בפגרי האנשים הפשעים בי כי תולעתם לא תמות ואשם לא תכבה והיו דראון לכל־בשר'
     ]
   ]
+};
+
+export const isaiah: Book = (version: string = 'niqqud') => {
+  return { title: 'isaiah', heTitle: 'ישעיהו', text: versions[version] };
 };

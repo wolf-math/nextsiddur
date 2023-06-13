@@ -1,7 +1,7 @@
-export const genesis = {
-  heTitle: 'בראשית',
-  title: 'genesis',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ׃',
       'וְהָאָרֶץ הָיְתָה תֹהוּ וָבֹהוּ וְחֹשֶׁךְ עַל־פְּנֵי תְהוֹם וְרוּחַ אֱלֹהִים מְרַחֶפֶת עַל־פְּנֵי הַמָּיִם׃',
@@ -4906,4 +4906,8 @@ export const genesis = {
       'וימת יוסף בן־מאה ועשר שנים ויחנטו אתו ויישם בארון במצרים'
     ]
   ]
+};
+
+export const genesis: Book = (version: string = 'niqqud') => {
+  return { heTitle: 'בראשית', title: 'genesis', text: versions[version] };
 };

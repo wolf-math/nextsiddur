@@ -1,7 +1,7 @@
-export const jeremiah = {
-  title: 'jeremiah',
-  heTitle: 'ירמיהו',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'דִּבְרֵי יִרְמְיָהוּ בֶּן־חִלְקִיָּהוּ מִן־הַכֹּהֲנִים אֲשֶׁר בַּעֲנָתוֹת בְּאֶרֶץ בִּנְיָמִן׃',
       'אֲשֶׁר הָיָה דְבַר־יְהוָה אֵלָיו בִּימֵי יֹאשִׁיָּהוּ בֶן־אָמוֹן מֶלֶךְ יְהוּדָה בִּשְׁלֹשׁ־עֶשְׂרֵה שָׁנָה לְמָלְכוֹ׃',
@@ -4411,4 +4411,8 @@ export const jeremiah = {
       'וארחתו ארחת תמיד נתנה־לו מאת מלך־בבל דבר־יום ביומו עד־יום מותו כל ימי חייו'
     ]
   ]
+};
+
+export const jeremiah: Book = (version: string = 'niqqud') => {
+  return { title: 'jeremiah', heTitle: 'ירמיהו', text: versions[version] };
 };

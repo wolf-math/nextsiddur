@@ -3012,7 +3012,7 @@ const versions: Record<string, string[][]> = {
   ]
 };
 
-export const chronicles1: Book = (version: string) => {
+export const chronicles1: Book = (version: string = 'niqqud') => {
   return {
     title: 'i chronicals',
     heTitle: 'דברי הימים א',

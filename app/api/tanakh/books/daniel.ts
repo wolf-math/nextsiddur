@@ -1152,7 +1152,7 @@ const versions: Record<string, string[][]> = {
   ]
 };
 
-export const daniel: Book = (version: string) => {
+export const daniel: Book = (version: string = 'niqqud') => {
   return {
     title: 'daniel',
     heTitle: 'דניאל',

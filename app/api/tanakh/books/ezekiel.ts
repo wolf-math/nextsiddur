@@ -1,7 +1,7 @@
-export const ezekiel = {
-  title: 'ezekiel',
-  heTitle: 'יחזקאל',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וַיְהִי בִּשְׁלֹשִׁים שָׁנָה בָּרְבִיעִי בַּחֲמִשָּׁה לַחֹדֶשׁ וַאֲנִי בְתוֹךְ־הַגּוֹלָה עַל־נְהַר־כְּבָר נִפְתְּחוּ הַשָּׁמַיִם וָאֶרְאֶה מַרְאוֹת אֱלֹהִים׃',
       'בַּחֲמִשָּׁה לַחֹדֶשׁ הִיא הַשָּׁנָה הַחֲמִישִׁית לְגָלוּת הַמֶּלֶךְ יוֹיָכִין׃',
@@ -4114,4 +4114,12 @@ export const ezekiel = {
       'סביב שמנה עשר אלף ושם־העיר מיום יהוה שמה'
     ]
   ]
+};
+
+export const ezekiel: Book = (version: string = 'niqqud') => {
+  return {
+    title: 'ezekiel',
+    heTitle: 'יחזקאל',
+    text: versions[version]
+  };
 };

@@ -103,12 +103,12 @@ interface Params {
 
 export default function getVal(
   book: string,
-  version: string = 'text',
+  version: string = 'niqqud',
   chapter: number | null = null,
   verse: number | null = null
 ): Params {
   // @ts-ignore
-  const text = allBooks[book];
+  const text = allBooks[book(version)];
 
   if (verse && chapter) return text[version][chapter - 1][verse - 1];
   if (chapter) return text[version][chapter - 1];

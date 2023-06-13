@@ -1,7 +1,7 @@
-export const exodus = {
-  title: 'exodus',
-  heTitle: 'שמות',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וְאֵלֶּה שְׁמוֹת בְּנֵי יִשְׂרָאֵל הַבָּאִים מִצְרָיְמָה אֵת יַעֲקֹב אִישׁ וּבֵיתוֹ בָּאוּ׃',
       'רְאוּבֵן שִׁמְעוֹן לֵוִי וִיהוּדָה׃',
@@ -4220,4 +4220,12 @@ export const exodus = {
       'וימת יוסף בן־מאה ועשר שנים ויחנטו אתו ויישם בארון במצרים'
     ]
   ]
+};
+
+export const exodus: Book = (version: string = 'niqqud') => {
+  return {
+    title: 'exodus',
+    heTitle: 'שמות',
+    text: versions[version]
+  };
 };

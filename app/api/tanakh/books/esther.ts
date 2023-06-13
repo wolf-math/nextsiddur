@@ -1,7 +1,7 @@
-export const esther = {
-  title: 'esther',
-  heTitle: 'אסתר',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וַיְהִי בִּימֵי אֲחַשְׁוֵרוֹשׁ הוּא אֲחַשְׁוֵרוֹשׁ הַמֹּלֵךְ מֵהֹדּוּ וְעַד־כּוּשׁ שֶׁבַע וְעֶשְׂרִים וּמֵאָה מְדִינָה׃',
       'בַּיָּמִים הָהֵם כְּשֶׁבֶת הַמֶּלֶךְ אֲחַשְׁוֵרוֹשׁ עַל כִּסֵּא מַלְכוּתוֹ אֲשֶׁר בְּשׁוּשַׁן הַבִּירָה׃',
@@ -568,4 +568,12 @@ export const esther = {
       'כי מרדכי היהודי משנה למלך אחשורוש וגדול ליהודים ורצוי לרב אחיו דרש טוב לעמו ודבר שלום לכל־זרעו'
     ]
   ]
+};
+
+export const esther: Book = (version: string = 'niqqud') => {
+  return {
+    title: 'esther',
+    heTitle: 'אסתר',
+    text: versions[version]
+  };
 };

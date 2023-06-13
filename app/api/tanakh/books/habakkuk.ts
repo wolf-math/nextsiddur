@@ -1,6 +1,6 @@
-export const habakkuk = {
-  title: 'habakkuk',
-  heTitle: 'חבקוק',
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
   text: [
     [
       'הַמַּשָׂא אֲשֶׁר חָזָה חֲבַקּוּק הַנָּבִיא׃',
@@ -193,4 +193,12 @@ export const habakkuk = {
       'יהוה אדני חילי וישם רגלי כאילות ועל במותי ידרכני למנצח בנגינותי'
     ]
   ]
+};
+
+export const habakkuk: Book = (version: string = 'niqqud') => {
+  return {
+    title: 'habakkuk',
+    heTitle: 'חבקוק',
+    text: versions[version]
+  };
 };
