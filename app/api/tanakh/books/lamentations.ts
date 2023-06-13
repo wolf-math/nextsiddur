@@ -1,7 +1,7 @@
-export const lamentations = {
-  title: 'lamentations',
-  heTitle: 'איכה',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'אֵיכָה יָשְׁבָה בָדָד הָעִיר רַבָּתִי עָם הָיְתָה כְּאַלְמָנָה רַּבָּתִי בַגּוֹיִם שָׂרָתִי בַּמְּדִינוֹת הָיְתָה לָמַס׃',
       'בָּכוֹ תִבְכֶּה בַּלַּיְלָה וְדִמְעָתָהּ עַל לֶחֱיָהּ אֵין־לָהּ מְנַחֵם מִכָּל־אֹהֲבֶיהָ כָּל־רֵעֶיהָ בָּגְדוּ בָהּ הָיוּ לָהּ לְאֹיְבִים׃',
@@ -499,4 +499,8 @@ export const lamentations = {
       'כי אם־מאס מאסתנו קצפת עלינו עד־מאד<br><small>[השיבנו יהוה אליך ונשובה חדש ימינו כקדם]</small>'
     ]
   ]
+};
+
+export const lamentations: Book = (version: string = 'niqqud') => {
+  return { title: 'lamentations', heTitle: 'איכה', text: versions[version] };
 };

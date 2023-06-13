@@ -1,7 +1,7 @@
-export const samuel1 = {
-  title: '1 samuel',
-  heTitle: 'שמואל א',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וַיְהִי אִישׁ אֶחָד מִן־הָרָמָתַיִם צוֹפִים מֵהַר אֶפְרָיִם וּשְׁמוֹ אֶלְקָנָה בֶּן־יְרֹחָם בֶּן־אֱלִיהוּא בֶּן־תֹּחוּ בֶן־צוּף אֶפְרָתִי׃',
       'וְלוֹ שְׁתֵּי נָשִׁים שֵׁם אַחַת חַנָּה וְשֵׁם הַשֵּׁנִית פְּנִנָּה וַיְהִי לִפְנִנָּה יְלָדִים וּלְחַנָּה אֵין יְלָדִים׃',
@@ -2626,4 +2626,8 @@ export const samuel1 = {
       'ויקחו את־עצמתיהם ויקברו תחת־האשל ביבשה ויצמו שבעת ימים'
     ]
   ]
+};
+
+export const samuel1: Book = (version: string = 'niqqud') => {
+  return { title: '1 samuel', heTitle: 'שמואל א', text: versions[version] };
 };

@@ -1,7 +1,7 @@
-export const obadaiah = {
-  title: 'obadaiah',
-  heTitle: 'עובדיה',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'חֲזוֹן עֹבַדְיָה כֹּה־אָמַר אֲדֹנָי יְהוִה לֶאֱדוֹם שְׁמוּעָה שָׁמַעְנוּ מֵאֵת יְהוָה וְצִיר בַּגּוֹיִם שֻׁלָּח קוּמוּ וְנָקוּמָה עָלֶיהָ לַמִּלְחָמָה׃',
       'הִנֵּה קָטֹן נְתַתִּיךָ בַּגּוֹיִם בָּזוּי אַתָּה מְאֹד׃',
@@ -76,4 +76,8 @@ export const obadaiah = {
       'ועלו מושעים בהר ציון לשפט את־הר עשו והיתה ליהוה המלוכה'
     ]
   ]
+};
+
+export const obadaiah: Book = (version: string = 'niqqud') => {
+  return { title: 'obadaiah', heTitle: 'עובדיה', text: versions[version] };
 };

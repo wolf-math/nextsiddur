@@ -1,7 +1,7 @@
-export const kings1 = {
-  title: 'i kings',
-  heTitle: 'מלכים א',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וְהַמֶּלֶךְ דָּוִד זָקֵן בָּא בַּיָּמִים וַיְכַסֻּהוּ בַּבְּגָדִים וְלֹא יִחַם לוֹ׃',
       'וַיֹּאמְרוּ לוֹ עֲבָדָיו יְבַקְשׁוּ לַאדֹנִי הַמֶּלֶךְ נַעֲרָה בְתוּלָה וְעָמְדָה לִפְנֵי הַמֶּלֶךְ וּתְהִי־לוֹ סֹכֶנֶת וְשָׁכְבָה בְחֵיקֶךָ וְחַם לַאדֹנִי הַמֶּלֶךְ׃',
@@ -2590,4 +2590,8 @@ export const kings1 = {
       'ויעבד את־הבעל וישתחוה לו ויכעס את־יהוה אלהי ישראל ככל אשר־עשה אביו'
     ]
   ]
+};
+
+export const kings1: Book = (version: string = 'niqqud') => {
+  return { title: 'i kings', heTitle: 'מלכים א', text: versions[version] };
 };

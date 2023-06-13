@@ -1,7 +1,7 @@
-export const zechariah = {
-  title: 'zecharaih',
-  heTitle: 'זכריה',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'בַּחֹדֶשׁ הַשְּׁמִינִי בִּשְׁנַת שְׁתַּיִם לְדָרְיָוֶשׁ הָיָה דְבַר־יְהוָה אֶל־זְכַרְיָה בֶּן־בֶּרֶכְיָה בֶּן־עִדּוֹ הַנָּבִיא לֵאמֹר׃',
       'קָצַף יְהוָה עַל־אֲבוֹתֵיכֶם קָצֶף׃',
@@ -724,4 +724,8 @@ export const zechariah = {
       'והיה כל־סיר בירושלם וביהודה קדש ליהוה צבאות ובאו כל־הזבחים ולקחו מהם ובשלו בהם ולא־יהיה כנעני עוד בבית־יהוה צבאות ביום ההוא'
     ]
   ]
+};
+
+export const zechariah: Book = (version: string = 'niqqud') => {
+  return { title: 'zecharaih', heTitle: 'זכריה', text: versions[version] };
 };

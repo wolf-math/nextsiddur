@@ -20,112 +20,30 @@ import { zechariah } from './zechariah';
 import { malachi } from './malachi';
 import { haggai } from './haggai';
 
-export const prophets = {
-  title: 'prophets',
-  heTitle: 'נְבִיאִים',
-  joshua: {
-    title: joshua.title,
-    heTitle: joshua.heTitle,
-    text: joshua.text
-  },
-  judges: {
-    title: judges.title,
-    heTitle: judges.heTitle,
-    text: judges.text
-  },
-  samuel1: {
-    title: samuel1.title,
-    heTitle: samuel1.heTitle,
-    text: samuel1.text
-  },
-  samuel2: {
-    title: samuel2.title,
-    heTitle: samuel2.heTitle,
-    text: samuel2.text
-  },
-  kings1: {
-    title: kings1.title,
-    heTitle: kings1.heTitle,
-    text: kings1.text
-  },
-  kings2: {
-    title: kings2.title,
-    heTitle: kings2.heTitle,
-    text: kings2.text
-  },
-  isaiah: {
-    title: isaiah.title,
-    heTitle: isaiah.heTitle,
-    text: isaiah.text
-  },
-  jeremiah: {
-    title: jeremiah.title,
-    heTitle: jeremiah.heTitle,
-    text: jeremiah.text
-  },
-  ezekiel: {
-    title: ezekiel.title,
-    heTitle: ezekiel.heTitle,
-    text: ezekiel.text
-  },
-  hosea: {
-    title: hosea.title,
-    heTitle: hosea.heTitle,
-    text: hosea.text
-  },
-  joel: {
-    title: joel.title,
-    heTitle: joel.heTitle,
-    text: joel.text
-  },
-  amos: {
-    title: amos.title,
-    heTitle: amos.heTitle,
-    text: amos.text
-  },
-  obadaiah: {
-    title: obadaiah.title,
-    heTitle: obadaiah.heTitle,
-    text: obadaiah.text
-  },
-  jonah: {
-    title: jonah.title,
-    heTitle: jonah.heTitle,
-    text: jonah.text
-  },
-  micah: {
-    title: micah.title,
-    heTitle: micah.heTitle,
-    text: micah.text
-  },
-  nahum: {
-    title: nahum.title,
-    heTitle: nahum.heTitle,
-    text: nahum.text
-  },
-  habakkuk: {
-    title: habakkuk.title,
-    heTitle: habakkuk.heTitle,
-    text: habakkuk.text
-  },
-  zephaniah: {
-    title: zephaniah.title,
-    heTitle: zephaniah.heTitle,
-    text: zephaniah.text
-  },
-  haggai: {
-    title: haggai.title,
-    heTitle: obadaiah.heTitle,
-    text: obadaiah.text
-  },
-  zechariah: {
-    title: zechariah.title,
-    heTitle: zechariah.heTitle,
-    text: zechariah.text
-  },
-  malachi: {
-    title: malachi.title,
-    heTitle: malachi.heTitle,
-    text: malachi.text
-  }
+export const prophets = (version: string) => {
+  return {
+    title: 'prophets',
+    heTitle: 'נְבִיאִים',
+    joshua: joshua(version),
+    judges: judges(version),
+    samuel1: samuel1(version),
+    samuel2: samuel2(version),
+    kings1: kings1(version),
+    kings2: kings2(version),
+    isaiah: isaiah(version),
+    jeremiah: jeremiah(version),
+    ezekiel: ezekiel(version),
+    hosea: hosea(version),
+    joel: joel(version),
+    amos: amos(version),
+    obadaiah: obadaiah(version),
+    jonah: jonah(version),
+    micah: micah(version),
+    nahum: nahum(version),
+    habakkuk: habakkuk(version),
+    zephaniah: zephaniah(version),
+    haggai: haggai(version),
+    zechariah: zechariah(version),
+    malachi: malachi(version)
+  };
 };

@@ -1,7 +1,7 @@
-export const songofsongs = {
-  title: 'song of songs',
-  heTitle: 'שיר השירים',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'שִׁיר הַשִּׁירִים אֲשֶׁר לִשְׁלֹמֹה׃',
       'יִשָּׁקֵנִי מִנְּשִׁיקוֹת פִּיהוּ כִּי־טוֹבִים דֹּדֶיךָ מִיָּיִן׃',
@@ -406,4 +406,12 @@ export const songofsongs = {
       'ברח דודי ודמה־לך לצבי או לעפר האילים על הרי בשמים'
     ]
   ]
+};
+
+export const songofsongs: Book = (version: string = 'niqqud') => {
+  return {
+    title: 'song of songs',
+    heTitle: 'שיר השירים',
+    text: versions[version]
+  };
 };

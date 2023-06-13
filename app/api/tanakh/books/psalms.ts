@@ -1,7 +1,7 @@
-export const psalms = {
-  title: 'psalms',
-  heTitle: 'תהילים',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'אַשְׁרֵי־הָאִישׁ אֲשֶׁר לֹא הָלַךְ בַּעֲצַת רְשָׁעִים וּבְדֶרֶךְ חַטָּאִים לֹא עָמָד וּבְמוֹשַׁב לֵצִים לֹא יָשָׁב׃',
       'כִּי אִם בְּתוֹרַת יְהוָה חֶפְצוֹ וּבְתוֹרָתוֹ יֶהְגֶּה יוֹמָם וָלָיְלָה׃',
@@ -8488,4 +8488,8 @@ export const psalms = {
       'כל הנשמה תהלל יה הללו־יה'
     ]
   ]
+};
+
+export const psalms: Book = (version: string = 'niqqud') => {
+  return { title: 'psalms', heTitle: 'תהילים', text: versions[version] };
 };

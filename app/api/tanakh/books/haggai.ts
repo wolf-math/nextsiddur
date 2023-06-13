@@ -138,11 +138,3 @@ const versions: Record<string, string[][]> = {
 export const haggai: Book = (version: string = 'niqqud') => {
   return { title: 'haggai', heTitle: 'חגי', text: versions[version] };
 };
-
-// import { Book } from './interfaces';
-
-// const versions: Record<string, string[][]> = {}
-
-// export const bewk: Book = (version: string = 'niqqud') => {
-//   return { title: 'bew', heTitle: 'k', text: versions[version] };
-// };

@@ -1,7 +1,7 @@
-export const leviticus = {
-  title: 'leviticus',
-  heTitle: 'ויקרא',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וַיִּקְרָא אֶל־מֹשֶׁה וַיְדַבֵּר יְהוָה אֵלָיו מֵאֹהֶל מוֹעֵד לֵאמֹר׃',
       'דַּבֵּר אֶל־בְּנֵי יִשְׂרָאֵל וְאָמַרְתָּ אֲלֵהֶם אָדָם כִּי־יַקְרִיב מִכֶּם קָרְבָּן לַיהוָה מִן־הַבְּהֵמָה מִן־הַבָּקָר וּמִן־הַצֹּאן תַּקְרִיבוּ אֶת־קָרְבַּנְכֶם׃',
@@ -2746,4 +2746,8 @@ export const leviticus = {
       'אלה המצות אשר צוה יהוה את־משה אל־בני ישראל בהר סיני'
     ]
   ]
+};
+
+export const leviticus: Book = (version: string = 'niqqud') => {
+  return { title: 'leviticus', heTitle: 'ויקרא', text: versions[version] };
 };

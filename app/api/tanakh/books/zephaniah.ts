@@ -1,7 +1,7 @@
-export const zephaniah = {
-  title: 'zephaniah',
-  heTitle: 'צפניה',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'דְּבַר־יְהוָה אֲשֶׁר הָיָה אֶל־צְפַנְיָה בֶּן־כּוּשִׁי בֶן־גְּדַלְיָה בֶּן־אֲמַרְיָה בֶּן־חִזְקִיָּה בִּימֵי יֹאשִׁיָּהוּ בֶן־אָמוֹן מֶלֶךְ יְהוּדָה׃',
       'אָסֹף אָסֵף כֹּל מֵעַל פְּנֵי הָאֲדָמָה נְאֻם־יְהוָה׃',
@@ -184,4 +184,8 @@ export const zephaniah = {
       'בעת ההיא אביא אתכם ובעת קבצי אתכם כי־אתן אתכם לשם ולתהלה בכל עמי הארץ בשובי את־שבותיכם לעיניכם אמר יהוה'
     ]
   ]
+};
+
+export const zephaniah: Book = (version: string = 'niqqud') => {
+  return { title: 'zephaniah', heTitle: 'צפניה', text: versions[version] };
 };

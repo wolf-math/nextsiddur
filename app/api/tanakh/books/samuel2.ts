@@ -1,7 +1,7 @@
-export const samuel2 = {
-  title: 'ii samuel',
-  heTitle: 'שמואל ב',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וַיְהִי אַחֲרֵי מוֹת שָׁאוּל וְדָוִד שָׁב מֵהַכּוֹת אֶת־הָעֲמָלֵק וַיֵּשֶׁב דָּוִד בְּצִקְלָג יָמִים שְׁנָיִם׃',
       'וַיְהִי בַּיּוֹם הַשְּׁלִישִׁי וְהִנֵּה אִישׁ בָּא מִן־הַמַּחֲנֶה מֵעִם שָׁאוּל וּבְגָדָיו קְרֻעִים וַאֲדָמָה עַל־רֹאשׁוֹ וַיְהִי בְּבֹאוֹ אֶל־דָּוִד וַיִּפֹּל אַרְצָה וַיִּשְׁתָּחוּ׃',
@@ -2236,4 +2236,8 @@ export const samuel2 = {
       'ויבן שם דוד מזבח ליהוה ויעל עלות ושלמים ויעתר יהוה לארץ ותעצר המגפה מעל ישראל'
     ]
   ]
+};
+
+export const samuel2: Book = (version: string = 'niqqud') => {
+  return { title: 'ii samuel', heTitle: 'שמואל ב', text: versions[version] };
 };

@@ -1,7 +1,7 @@
-export const nehemiah = {
-  title: 'nehemiah',
-  heTitle: 'נחמיה',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'דִּבְרֵי נְחֶמְיָה בֶּן־חֲכַלְיָה וַיְהִי בְחֹדֶשׁ־כסלו [כִּסְלֵיו] שְׁנַת עֶשְׂרִים וַאֲנִי הָיִיתִי בְּשׁוּשַׁן הַבִּירָה׃',
       'וַיָּבֹא חֲנָנִי אֶחָד מֵאַחַי הוּא וַאֲנָשִׁים מִיהוּדָה וָאֶשְׁאָלֵם עַל־הַיְּהוּדִים הַפְּלֵיטָה אֲשֶׁר־נִשְׁאֲרוּ מִן־הַשֶּׁבִי וְעַל־יְרוּשָׁלִָם׃',
@@ -1300,4 +1300,8 @@ export const nehemiah = {
       'ולקרבן העצים בעתים מזמנות ולבכורים זכרה־לי אלהי לטובה'
     ]
   ]
+};
+
+export const nehemiah: Book = (version: string = 'niqqud') => {
+  return { title: 'nehemiah', heTitle: 'נחמיה', text: versions[version] };
 };

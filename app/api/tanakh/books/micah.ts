@@ -1,7 +1,7 @@
-export const micah = {
-  title: 'micah',
-  heTitle: 'מיכה',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'דְּבַר־יְהוָה אֲשֶׁר הָיָה אֶל־מִיכָה הַמֹּרַשְׁתִּי בִּימֵי יוֹתָם אָחָז יְחִזְקִיָּה מַלְכֵי יְהוּדָה אֲשֶׁר־חָזָה עַל־שֹׁמְרוֹן וִירוּשָׁלִָם׃',
       'שִׁמְעוּ עַמִּים כֻּלָּם הַקְשִׁיבִי אֶרֶץ וּמְלֹאָהּ וִיהִי אֲדֹנָי יְהוִה בָּכֶם לְעֵד אֲדֹנָי מֵהֵיכַל קָדְשׁוֹ׃',
@@ -364,4 +364,8 @@ export const micah = {
       'תתן אמת ליעקב חסד לאברהם אשר־נשבעת לאבתינו מימי קדם'
     ]
   ]
+};
+
+export const micah: Book = (version: string = 'niqqud') => {
+  return { title: 'micah', heTitle: 'מיכה', text: versions[version] };
 };

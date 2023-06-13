@@ -1,7 +1,7 @@
-export const kings2 = {
-  title: 'ii kings',
-  heTitle: 'מלכים ב',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וַיִּפְשַׁע מוֹאָב בְּיִשְׂרָאֵל אַחֲרֵי מוֹת אַחְאָב׃',
       'וַיִּפֹּל אֲחַזְיָה בְּעַד הַשְּׂבָכָה בַּעֲלִיָּתוֹ אֲשֶׁר בְּשֹׁמְרוֹן וַיָּחַל וַיִּשְׁלַח מַלְאָכִים וַיֹּאמֶר אֲלֵהֶם לְכוּ דִרְשׁוּ בְּבַעַל זְבוּב אֱלֹהֵי עֶקְרוֹן אִם־אֶחְיֶה מֵחֳלִי זֶה׃',
@@ -2314,4 +2314,8 @@ export const kings2 = {
       'וארחתו ארחת תמיד נתנה־לו מאת המלך דבר־יום ביומו כל ימי חיו'
     ]
   ]
+};
+
+export const kings2: Book = (version: string = 'niqqud') => {
+  return { title: 'ii kings', heTitle: 'מלכים ב', text: versions[version] };
 };

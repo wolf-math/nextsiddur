@@ -1,7 +1,7 @@
-export const malachi = {
-  title: 'malachi',
-  heTitle: 'מלאכי',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'מַשָּׂא דְבַר־יְהוָה אֶל־יִשְׂרָאֵל בְּיַד מַלְאָכִי׃',
       'אָהַבְתִּי אֶתְכֶם אָמַר יְהוָה וַאֲמַרְתֶּם בַּמָּה אֲהַבְתָּנוּ הֲלוֹא־אָח עֵשָׂו לְיַעֲקֹב נְאֻם־יְהוָה וָאֹהַב אֶת־יַעֲקֹב׃',
@@ -190,4 +190,8 @@ export const malachi = {
       'והשיב לב־אבות על־בנים ולב בנים על־אבותם פן־אבוא והכיתי את־הארץ חרם<br><small>[הנה אנכי שלח לכם את אליה הנביא לפני בוא יום יהוה הגדול והנורא]</small>'
     ]
   ]
+};
+
+export const malachi: Book = (version: string = 'niqqud') => {
+  return { title: 'malachi', heTitle: 'מלאכי', text: versions[version] };
 };

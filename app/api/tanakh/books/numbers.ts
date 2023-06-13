@@ -1,7 +1,7 @@
-export const numbers = {
-  title: 'numbers',
-  heTitle: 'במדבר',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וַיְדַבֵּר יְהוָה אֶל־מֹשֶׁה בְּמִדְבַּר סִינַי בְּאֹהֶל מוֹעֵד בְּאֶחָד לַחֹדֶשׁ הַשֵּׁנִי בַּשָּׁנָה הַשֵּׁנִית לְצֵאתָם מֵאֶרֶץ מִצְרַיִם לֵאמֹר׃',
       'שְׂאוּ אֶת־רֹאשׁ כָּל־עֲדַת בְּנֵי־יִשְׂרָאֵל לְמִשְׁפְּחֹתָם לְבֵית אֲבֹתָם בְּמִסְפַּר שֵׁמוֹת כָּל־זָכָר לְגֻלְגְּלֹתָם׃',
@@ -4087,4 +4087,8 @@ export const numbers = {
       'אלה המצות והמשפטים אשר צוה יהוה ביד־משה אל־בני ישראל בערבת מואב על ירדן ירחו'
     ]
   ]
+};
+
+export const numbers: Book = (version: string = 'niqqud') => {
+  return { title: 'numbers', heTitle: 'במדבר', text: versions[version] };
 };

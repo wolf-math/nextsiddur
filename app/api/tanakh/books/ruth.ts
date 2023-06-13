@@ -1,7 +1,7 @@
-export const ruth = {
-  title: 'ruth',
-  heTitle: 'רות',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וַיְהִי בִּימֵי שְׁפֹט הַשֹּׁפְטִים וַיְהִי רָעָב בָּאָרֶץ וַיֵּלֶךְ אִישׁ מִבֵּית לֶחֶם יְהוּדָה לָגוּר בִּשְׂדֵי מוֹאָב הוּא וְאִשְׁתּוֹ וּשְׁנֵי בָנָיו׃',
       'וְשֵׁם הָאִישׁ אֱ‍לִימֶלֶךְ וְשֵׁם אִשְׁתּוֹ נָעֳמִי וְשֵׁם שְׁנֵי־בָנָיו מַחְלוֹן וְכִלְיוֹן אֶפְרָתִים מִבֵּית לֶחֶם יְהוּדָה וַיָּבֹאוּ שְׂדֵי־מוֹאָב וַיִּהְיוּ־שָׁם׃',
@@ -286,4 +286,8 @@ export const ruth = {
       'ועבד הוליד את־ישי וישי הוליד את־דוד'
     ]
   ]
+};
+
+export const ruth: Book = (version: string = 'niqqud') => {
+  return { title: 'ruth', heTitle: 'רות', text: versions[version] };
 };

@@ -1,7 +1,7 @@
-export const judges = {
-  title: 'judges',
-  heTitle: 'שופטים',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'וַיְהִי אַחֲרֵי מוֹת יְהוֹשֻׁעַ וַיִּשְׁאֲלוּ בְּנֵי יִשְׂרָאֵל בַּיהוָה לֵאמֹר מִי יַעֲלֶה־לָּנוּ אֶל־הַכְּנַעֲנִי בַּתְּחִלָּה לְהִלָּחֶם בּוֹ׃',
       'וַיֹּאמֶר יְהוָה יְהוּדָה יַעֲלֶה הִנֵּה נָתַתִּי אֶת־הָאָרֶץ בְּיָדוֹ׃',
@@ -2033,4 +2033,8 @@ export const judges = {
       'ואלעזר בן־אהרן מת ויקברו אתו בגבעת פינחס בנו אשר נתן־לו בהר אפרים'
     ]
   ]
+};
+
+export const judges: Book = (version: string = 'niqqud') => {
+  return { title: 'judges', heTitle: 'שופטים', text: versions[version] };
 };

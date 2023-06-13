@@ -1,7 +1,7 @@
-export const nahum = {
-  title: 'nahum',
-  heTitle: 'נחום',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'מַשָּׂא נִינְוֵה סֵפֶר חֲזוֹן נַחוּם הָאֶלְקֹשִׁי׃',
       'אֵל קַנּוֹא וְנֹקֵם יְהוָה נֹקֵם יְהוָה וּבַעַל חֵמָה נֹקֵם יְהוָה לְצָרָיו וְנוֹטֵר הוּא לְאֹיְבָיו׃',
@@ -166,4 +166,8 @@ export const nahum = {
       'אין־כהה לשברך נחלה מכתך כל שמעי שמעך תקעו כף עליך כי על־מי לא־עברה רעתך תמיד'
     ]
   ]
+};
+
+export const nahum: Book = (version: string = 'niqqud') => {
+  return { title: 'nahum', heTitle: 'נחום', text: versions[version] };
 };

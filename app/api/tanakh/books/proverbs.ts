@@ -1,7 +1,7 @@
-export const proverbs = {
-  title: 'proverbs',
-  heTitle: 'משלי',
-  text: [
+import { Book } from './interfaces';
+
+const versions: Record<string, string[][]> = {
+  niqqud: [
     [
       'מִשְׁלֵי שְׁלֹמֹה בֶן־דָּוִד מֶלֶךְ יִשְׂרָאֵל׃',
       'לָדַעַת חָכְמָה וּמוּסָר לְהָבִין אִמְרֵי בִינָה׃',
@@ -2938,4 +2938,8 @@ export const proverbs = {
       'תנו־לה מפרי ידיה ויהללוה בשערים מעשיה'
     ]
   ]
+};
+
+export const proverbs: Book = (version: string = 'niqqud') => {
+  return { title: 'proverbs', heTitle: 'משלי', text: versions[version] };
 };
