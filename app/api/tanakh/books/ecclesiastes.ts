@@ -751,6 +751,7 @@ export const ecclesiastes: Book = (version: string = 'niqqud') => {
   return {
     title: 'ecclesiastes',
     heTitle: 'קהלת',
+    version,
     text: versions[version]
   };
 };

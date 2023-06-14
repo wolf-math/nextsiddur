@@ -8491,5 +8491,10 @@ const versions: Record<string, string[][]> = {
 };
 
 export const psalms: Book = (version: string = 'niqqud') => {
-  return { title: 'psalms', heTitle: 'תהילים', text: versions[version] };
+  return {
+    title: 'psalms',
+    heTitle: 'תהילים',
+    version,
+    text: versions[version]
+  };
 };

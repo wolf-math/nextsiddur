@@ -199,6 +199,7 @@ export const habakkuk: Book = (version: string = 'niqqud') => {
   return {
     title: 'habakkuk',
     heTitle: 'חבקוק',
+    version,
     text: versions[version]
   };
 };

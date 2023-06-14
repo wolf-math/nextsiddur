@@ -95,24 +95,45 @@ const allBooks = {
   chronicles2
 };
 
-interface Params {
-  book: string;
-  version: string | null;
-  chapter: number | null;
-  verse: number | null;
-}
-
 export default function getText(
   book: string,
   version: string = 'niqqud',
   chapter: number | null = null,
   verse: number | null = null
-): Params {
+) {
   // @ts-ignore
   const text = allBooks[book](version);
 
-  if (verse && chapter) return text.text[chapter - 1][verse - 1];
-  if (chapter) return text.text[chapter - 1];
+  if (verse && chapter) {
+    const { title, heTitle } = text;
+    const selection = text.text[chapter - 1][verse - 1];
+
+    const passage = {
+      title,
+      heTitle,
+      version,
+      chapter,
+      verse,
+      text: selection
+    };
+
+    return passage;
+  }
+
+  if (chapter) {
+    const { title, heTitle } = text;
+    const selection = text.text[chapter - 1];
+
+    const passage = {
+      title,
+      heTitle,
+      version,
+      chapter,
+      text: selection
+    };
+
+    return passage;
+  }
 
   return text;
 }

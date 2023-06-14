@@ -502,5 +502,5 @@ const versions: Record<string, string[][]> = {
 };
 
 export const amos: Book = (version: string = 'niqqud') => {
-  return { title: 'amos', heTitle: 'עמוס', text: versions[version] };
+  return { title: 'amos', heTitle: 'עמוס', version, text: versions[version] };
 };

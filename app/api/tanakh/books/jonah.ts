@@ -178,5 +178,5 @@ const versions: Record<string, string[][]> = {
 };
 
 export const jonah: Book = (version: string = 'niqqud') => {
-  return { title: 'jonah', heTitle: 'יונה', text: versions[version] };
+  return { title: 'jonah', heTitle: 'יונה', version, text: versions[version] };
 };

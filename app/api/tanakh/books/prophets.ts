@@ -24,6 +24,7 @@ export const prophets = (version: string) => {
   return {
     title: 'prophets',
     heTitle: 'נְבִיאִים',
+    version,
     joshua: joshua(version),
     judges: judges(version),
     samuel1: samuel1(version),

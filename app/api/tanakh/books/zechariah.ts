@@ -727,5 +727,10 @@ const versions: Record<string, string[][]> = {
 };
 
 export const zechariah: Book = (version: string = 'niqqud') => {
-  return { title: 'zecharaih', heTitle: 'זכריה', text: versions[version] };
+  return {
+    title: 'zecharaih',
+    heTitle: 'זכריה',
+    version,
+    text: versions[version]
+  };
 };
