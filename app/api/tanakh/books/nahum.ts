@@ -169,5 +169,5 @@ const versions: Record<string, string[][]> = {
 };
 
 export const nahum: Book = (version: string = 'niqqud') => {
-  return { title: 'nahum', heTitle: 'נחום', text: versions[version] };
+  return { title: 'nahum', heTitle: 'נחום', version, text: versions[version] };
 };

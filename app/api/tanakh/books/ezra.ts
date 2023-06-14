@@ -913,6 +913,7 @@ export const ezra: Book = (version: string = 'niqqud') => {
   return {
     title: 'ezra',
     heTitle: 'עזרא',
+    version,
     text: versions[version]
   };
 };

@@ -685,5 +685,5 @@ const versions: Record<string, string[][]> = {
 };
 
 export const hosea: Book = (version: string = 'niqqud') => {
-  return { title: 'hosea', heTitle: 'הושע', text: versions[version] };
+  return { title: 'hosea', heTitle: 'הושע', version, text: versions[version] };
 };

@@ -4120,6 +4120,7 @@ export const ezekiel: Book = (version: string = 'niqqud') => {
   return {
     title: 'ezekiel',
     heTitle: 'יחזקאל',
+    version,
     text: versions[version]
   };
 };

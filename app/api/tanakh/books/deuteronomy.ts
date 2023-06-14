@@ -3085,6 +3085,7 @@ export const deuteronomy: Book = (version: string = 'niqqud') => {
   return {
     title: 'deuteronomy',
     heTitle: 'דברים',
+    version,
     text: versions[version]
   };
 };

@@ -3016,6 +3016,7 @@ export const chronicles1: Book = (version: string = 'niqqud') => {
   return {
     title: 'i chronicals',
     heTitle: 'דברי הימים א',
+    version,
     text: versions[version]
   };
 };

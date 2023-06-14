@@ -8,6 +8,7 @@ export const torah = (version: string) => {
   return {
     title: 'torah',
     heTitle: 'תּוֹרָה',
+    version,
     genesis: genesis(version),
     exodus: exodus(version),
     leviticus: leviticus(version),

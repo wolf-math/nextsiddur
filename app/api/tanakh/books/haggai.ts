@@ -136,5 +136,5 @@ const versions: Record<string, string[][]> = {
 };
 
 export const haggai: Book = (version: string = 'niqqud') => {
-  return { title: 'haggai', heTitle: 'חגי', text: versions[version] };
+  return { title: 'haggai', heTitle: 'חגי', version, text: versions[version] };
 };

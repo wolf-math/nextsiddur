@@ -4226,6 +4226,7 @@ export const exodus: Book = (version: string = 'niqqud') => {
   return {
     title: 'exodus',
     heTitle: 'שמות',
+    version,
     text: versions[version]
   };
 };

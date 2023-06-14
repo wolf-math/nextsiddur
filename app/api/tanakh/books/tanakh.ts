@@ -6,6 +6,7 @@ export const tanakh = (version: string) => {
   return {
     title: 'tanakh',
     heTitle: 'תָּנָ״ךְ',
+    version,
     torah: torah(version),
     prophets: prophets(version),
     writings: writings(version)

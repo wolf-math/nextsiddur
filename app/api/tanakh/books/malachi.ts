@@ -193,5 +193,10 @@ const versions: Record<string, string[][]> = {
 };
 
 export const malachi: Book = (version: string = 'niqqud') => {
-  return { title: 'malachi', heTitle: 'מלאכי', text: versions[version] };
+  return {
+    title: 'malachi',
+    heTitle: 'מלאכי',
+    version,
+    text: versions[version]
+  };
 };

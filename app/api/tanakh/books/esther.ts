@@ -574,6 +574,7 @@ export const esther: Book = (version: string = 'niqqud') => {
   return {
     title: 'esther',
     heTitle: 'אסתר',
+    version,
     text: versions[version]
   };
 };

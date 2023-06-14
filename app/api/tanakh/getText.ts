@@ -111,6 +111,7 @@ export default function getText(
     const passage = {
       title,
       heTitle,
+      version,
       chapter,
       verse,
       text: selection
@@ -126,6 +127,7 @@ export default function getText(
     const passage = {
       title,
       heTitle,
+      version,
       chapter,
       text: selection
     };

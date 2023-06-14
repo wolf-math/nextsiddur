@@ -412,6 +412,7 @@ export const songofsongs: Book = (version: string = 'niqqud') => {
   return {
     title: 'song of songs',
     heTitle: 'שיר השירים',
+    version,
     text: versions[version]
   };
 };

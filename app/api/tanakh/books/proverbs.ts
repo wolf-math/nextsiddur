@@ -2941,5 +2941,10 @@ const versions: Record<string, string[][]> = {
 };
 
 export const proverbs: Book = (version: string = 'niqqud') => {
-  return { title: 'proverbs', heTitle: 'משלי', text: versions[version] };
+  return {
+    title: 'proverbs',
+    heTitle: 'משלי',
+    version,
+    text: versions[version]
+  };
 };

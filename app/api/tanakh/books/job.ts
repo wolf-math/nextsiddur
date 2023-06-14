@@ -3472,5 +3472,5 @@ const versions: Record<string, string[][]> = {
 };
 
 export const job: Book = (version: string = 'niqqud') => {
-  return { title: 'job', heTitle: 'איוב', text: versions[version] };
+  return { title: 'job', heTitle: 'איוב', version, text: versions[version] };
 };

@@ -16,6 +16,7 @@ export const writings = (version: string) => {
   return {
     title: 'writings',
     heTitle: 'כתובים',
+    version,
     psalms: psalms(version),
     proverbs: proverbs(version),
     job: job(version),

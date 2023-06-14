@@ -1156,6 +1156,7 @@ export const daniel: Book = (version: string = 'niqqud') => {
   return {
     title: 'daniel',
     heTitle: 'דניאל',
+    version,
     text: versions[version]
   };
 };

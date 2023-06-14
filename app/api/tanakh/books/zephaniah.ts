@@ -187,5 +187,10 @@ const versions: Record<string, string[][]> = {
 };
 
 export const zephaniah: Book = (version: string = 'niqqud') => {
-  return { title: 'zephaniah', heTitle: 'צפניה', text: versions[version] };
+  return {
+    title: 'zephaniah',
+    heTitle: 'צפניה',
+    version,
+    text: versions[version]
+  };
 };
