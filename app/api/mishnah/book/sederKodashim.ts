@@ -2,7 +2,7 @@ import { zevachim } from './zevachim';
 import { menachot } from './menachot';
 import { chullin } from './chullin';
 import { bekhorot } from './bekhorot';
-import { arakin } from './arakhin'; // check this
+import { arakhin } from './arakhin';
 import { temurah } from './temurah';
 import { keritot } from './keritot';
 import { meila } from './meila';
@@ -17,7 +17,7 @@ export const sederKodashim = {
   menachot,
   chullin,
   bekhorot,
-  arakin,
+  arakhin,
   temurah,
   keritot,
   meila,

@@ -54,7 +54,7 @@ const books = [
   'menachot',
   'chullin',
   'bekhorot',
-  'arakin',
+  'arakhin',
   'temurah',
   'keritot',
   'meila',

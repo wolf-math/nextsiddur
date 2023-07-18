@@ -1,4 +1,4 @@
-export const arakin = {
+export const arakhin = {
   title: 'arakhin',
   heTitle: 'ערכין',
   seder: 'Kodashim',
