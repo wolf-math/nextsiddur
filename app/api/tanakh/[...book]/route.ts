@@ -7,6 +7,7 @@ const books = [
   'torah',
   'prophets',
   'writings',
+
   'genesis',
   'exodus',
   'leviticus',
