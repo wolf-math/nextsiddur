@@ -1,5 +1,5 @@
 // zeraim
-import { sederZeraim } from './book/sederZeraim';
+// import { sederZeraim } from './book/sederZeraim';
 import { berakhot } from './book/berakhot';
 import { peah } from './book/peah';
 import { demai } from './book/demai';
@@ -13,7 +13,7 @@ import { orlah } from './book/orlah';
 import { bikkurim } from './book/bikkurim';
 
 // moed
-import { sederMoed } from './book/sederMoed';
+// import { sederMoed } from './book/sederMoed';
 import { shabbat } from './book/shabbat';
 import { eruvin } from './book/eruvin';
 import { pesachim } from './book/pesachim';
@@ -28,7 +28,7 @@ import { moedKatan } from './book/moedKatan';
 import { chagigah } from './book/chagigah';
 
 // nashim
-import { sederNashim } from './book/sederNashim';
+// import { sederNashim } from './book/sederNashim';
 import { yevamot } from './book/yevamot';
 import { ketubot } from './book/ketubot';
 import { nedarim } from './book/nedarim';
@@ -38,7 +38,7 @@ import { gittin } from './book/gittin';
 import { kiddushin } from './book/kiddushin';
 
 // nezikin
-import { sederNezikin } from './book/sederNezikin';
+// import { sederNezikin } from './book/sederNezikin';
 import { bavaKama } from './book/bavaKama';
 import { bavaMetzia } from './book/bavaMetzia';
 import { bavaBatra } from './book/bavaBatra';
@@ -51,12 +51,12 @@ import { avot } from './book/avot';
 import { horayot } from './book/horayot';
 
 // kodashim
-import { sederKodashim } from './book/sederKodashim';
+// import { sederKodashim } from './book/sederKodashim';
 import { zevachim } from './book/zevachim';
 import { menachot } from './book/menachot';
 import { chullin } from './book/chullin';
 import { bekhorot } from './book/bekhorot';
-import { arakin } from './book/arakhin'; // check this
+import { arakhin } from './book/arakhin'; // check this
 import { temurah } from './book/temurah';
 import { keritot } from './book/keritot';
 import { meila } from './book/meila';
@@ -65,7 +65,7 @@ import { middot } from './book/middot';
 import { kinnim } from './book/kinnim';
 
 // taharot
-import { sederTaharot } from './book/sederTaharot';
+// import { sederTaharot } from './book/sederTaharot';
 import { keilim } from './book/keilim';
 import { ohalot } from './book/ohalot';
 import { negaim } from './book/negaim';
@@ -115,7 +115,8 @@ const allBooks = {
   sotah,
   gittin,
   kiddushin,
-  sederNezikin,
+
+  // sederNezikin,
   bavaKama,
   bavaMetzia,
   bavaBatra,
@@ -132,7 +133,7 @@ const allBooks = {
   menachot,
   chullin,
   bekhorot,
-  arakin,
+  arakhin,
   temurah,
   keritot,
   meila,
