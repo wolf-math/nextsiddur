@@ -56,7 +56,7 @@ import { zevachim } from './book/zevachim';
 import { menachot } from './book/menachot';
 import { chullin } from './book/chullin';
 import { bekhorot } from './book/bekhorot';
-import { arakhin } from './book/arakhin'; // check this
+import { arakhin } from './book/arakhin';
 import { temurah } from './book/temurah';
 import { keritot } from './book/keritot';
 import { meila } from './book/meila';
