@@ -1,4 +1,4 @@
-export const meliah = {
+export const meila = {
   title: 'meilah',
   heTitle: 'מעילה',
   seder: 'kodashim',

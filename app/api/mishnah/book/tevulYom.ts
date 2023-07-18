@@ -1,4 +1,4 @@
-export const tevulTom = {
+export const tevulYom = {
   title: 'tevul yom',
   heTitle: 'טבול יום',
   seder: 'taharot',

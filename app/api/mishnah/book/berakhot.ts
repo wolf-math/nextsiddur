@@ -1,4 +1,4 @@
-export const Berakhot = {
+export const berakhot = {
   title: 'berakhot',
   heTitle: 'ברכות',
   seder: 'zeraim',

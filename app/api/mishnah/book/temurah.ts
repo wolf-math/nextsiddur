@@ -1,4 +1,4 @@
-export const terumah = {
+export const temurah = {
   title: 'temurah',
   heTitle: 'תמורה',
   seder: 'kodashim',
