@@ -1,6 +1,6 @@
 export const negaim = {
-  title: 'negaim',
-  heTitle: 'נגעים',
+  tractate: 'negaim',
+  masechta: 'נגעים',
   seder: 'taharot',
   heSeder: 'טהרות',
   text: [

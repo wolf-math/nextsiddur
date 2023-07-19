@@ -1,6 +1,6 @@
 export const menachot = {
-  title: 'menachot',
-  heTitle: 'מנחות',
+  tractate: 'menachot',
+  masechta: 'מנחות',
   seder: 'kodashim',
   heSeder: 'קודשים',
   text: [

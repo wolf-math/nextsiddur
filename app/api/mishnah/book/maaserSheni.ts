@@ -1,6 +1,6 @@
 export const maaserSheni = {
-  title: 'maaser sheni',
-  heTitle: 'מעשר שני',
+  tractate: 'maaser sheni',
+  masechta: 'מעשר שני',
   seder: 'zeraim',
   heSeder: 'זרעים',
   text: [

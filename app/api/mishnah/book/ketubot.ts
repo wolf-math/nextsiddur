@@ -1,6 +1,6 @@
 export const ketubot = {
-  title: 'ketubot',
-  heTitle: 'כתובות',
+  tractate: 'ketubot',
+  masechta: 'כתובות',
   seder: 'nashim',
   heSeder: 'נשים',
   text: [

@@ -1,6 +1,6 @@
 export const chullin = {
-  title: 'chullin',
-  heTitle: 'חולין',
+  tractate: 'chullin',
+  masechta: 'חולין',
   seder: 'kodashim',
   heSeder: 'קודשים',
   text: [

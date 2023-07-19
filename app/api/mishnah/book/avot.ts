@@ -1,6 +1,6 @@
 export const avot = {
-  title: 'Avot',
-  heTitle: 'אבות',
+  tractate: 'Avot',
+  masechta: 'אבות',
   seder: 'nezikin',
   heSeder: 'נזיקין',
   text: [

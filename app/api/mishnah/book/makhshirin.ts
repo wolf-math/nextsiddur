@@ -1,6 +1,6 @@
 export const makhshirin = {
-  title: 'makhshirin',
-  heTitle: 'מכשירין',
+  tractate: 'makhshirin',
+  masechta: 'מכשירין',
   seder: 'taharot',
   heSeder: 'טהרות',
   text: [

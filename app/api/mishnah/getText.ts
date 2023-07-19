@@ -56,7 +56,7 @@ import { zevachim } from './book/zevachim';
 import { menachot } from './book/menachot';
 import { chullin } from './book/chullin';
 import { bekhorot } from './book/bekhorot';
-import { arakhin } from './book/arakhin'; // check this
+import { arakhin } from './book/arakhin';
 import { temurah } from './book/temurah';
 import { keritot } from './book/keritot';
 import { meila } from './book/meila';
@@ -157,17 +157,21 @@ const allBooks = {
 };
 
 export default function getText(
-  masechta: string,
+  tractate: string,
   chapter: number | null = null,
   mishnah: number | null = null
 ) {
   // @ts-ignore
-  const text = allBooks[masechta];
+  const text = allBooks[tractate];
+  const { seder, heSeder, masechta } = text;
 
   if (chapter && mishnah) {
     const selection = text.text[chapter - 1][mishnah - 1];
     const passage = {
+      tractate,
       masechta,
+      seder,
+      heSeder,
       chapter,
       mishnah,
       selection
@@ -178,9 +182,12 @@ export default function getText(
   if (chapter) {
     const selection = text.text[chapter - 1];
     const passage = {
+      tractate,
       masechta,
+      seder,
+      heSeder,
       chapter,
-      mishnah,
+      count: `${selection.length} mishnayot`,
       selection
     };
     return passage;

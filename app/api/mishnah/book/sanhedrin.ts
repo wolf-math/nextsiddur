@@ -1,6 +1,6 @@
 export const sanhedrin = {
-  title: 'sanhedrin',
-  heTitle: 'סנהדרין',
+  tractate: 'sanhedrin',
+  masechta: 'סנהדרין',
   seder: 'nezikin',
   heSeder: 'נזיקין',
   text: [

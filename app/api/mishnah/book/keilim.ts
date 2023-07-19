@@ -1,6 +1,6 @@
 export const keilim = {
-  title: 'kelim',
-  heTitle: 'כלים',
+  tractate: 'kelim',
+  masechta: 'כלים',
   seder: 'taharot',
   heSeder: 'טהרות',
   text: [

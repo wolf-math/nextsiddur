@@ -1,6 +1,6 @@
 export const sotah = {
-  title: 'sotah',
-  heTitle: 'סוטה',
+  tractate: 'sotah',
+  masechta: 'סוטה',
   seder: 'nashim',
   heSeder: 'נשים',
   text: [

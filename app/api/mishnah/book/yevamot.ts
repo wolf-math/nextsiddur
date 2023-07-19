@@ -1,6 +1,6 @@
 export const yevamot = {
-  title: 'yevamot',
-  heTitle: 'יבמות',
+  tractate: 'yevamot',
+  masechta: 'יבמות',
   seder: 'nashim',
   heSeder: 'נשים',
   text: [

@@ -1,6 +1,6 @@
 export const meila = {
-  title: 'meilah',
-  heTitle: 'מעילה',
+  tractate: 'meilah',
+  masechta: 'מעילה',
   seder: 'kodashim',
   heSeder: 'קודשים',
   text: [

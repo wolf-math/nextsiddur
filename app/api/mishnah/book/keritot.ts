@@ -1,6 +1,6 @@
 export const keritot = {
-  title: 'keritot',
-  heTitle: 'כריתות',
+  tractate: 'keritot',
+  masechta: 'כריתות',
   seder: 'kodashim',
   heSeder: 'קודשים',
   text: [

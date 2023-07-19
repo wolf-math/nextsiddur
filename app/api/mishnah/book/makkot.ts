@@ -1,6 +1,6 @@
 export const makkot = {
-  title: 'makkot',
-  heTitle: 'מכות',
+  tractate: 'makkot',
+  masechta: 'מכות',
   seder: 'nezikin',
   heSeder: 'נזיקין',
   text: [

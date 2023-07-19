@@ -1,6 +1,6 @@
 export const ohalot = {
-  title: 'oholot',
-  heTitle: 'אהלות',
+  tractate: 'oholot',
+  masechta: 'אהלות',
   seder: 'taharot',
   heSeder: 'טהרות',
   text: [

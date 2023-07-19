@@ -1,6 +1,6 @@
 export const taanit = {
-  title: 'Mishnah Taanit',
-  heTitle: 'משנה תענית',
+  tractate: 'taanit',
+  masechta: 'תענית',
   seder: 'moed',
   heSeder: 'מועד',
   text: [

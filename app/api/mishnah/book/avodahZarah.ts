@@ -1,6 +1,6 @@
 export const avodahZarah = {
-  title: 'Mishnah Avodah Zarah',
-  heTitle: 'עבודה זרה',
+  tractate: 'Mishnah Avodah Zarah',
+  masechta: 'עבודה זרה',
   seder: 'nezikin',
   heSeder: 'נזיקין',
   text: [

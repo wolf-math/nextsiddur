@@ -1,6 +1,6 @@
 export const parah = {
-  title: 'parah',
-  heTitle: 'פרה',
+  tractate: 'parah',
+  masechta: 'פרה',
   seder: 'taharot',
   heSeder: 'טהרות',
   text: [

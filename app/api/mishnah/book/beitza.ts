@@ -1,6 +1,6 @@
 export const beitzah = {
-  title: 'beitzah',
-  heTitle: 'ביצה',
+  tractate: 'beitzah',
+  masechta: 'ביצה',
   seder: 'moed',
   heSeder: 'מועד',
   text: [

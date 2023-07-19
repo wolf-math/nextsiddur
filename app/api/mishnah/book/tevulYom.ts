@@ -1,6 +1,6 @@
 export const tevulYom = {
-  title: 'tevul yom',
-  heTitle: 'טבול יום',
+  tractate: 'tevul yom',
+  masechta: 'טבול יום',
   seder: 'taharot',
   heSeder: 'טהרות',
   text: [

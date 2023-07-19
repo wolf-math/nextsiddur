@@ -1,6 +1,6 @@
 export const shekalim = {
-  title: 'shekalim',
-  heTitle: 'שקלים',
+  tractate: 'shekalim',
+  masechta: 'שקלים',
   seder: 'moed',
   heSeder: 'מועד',
   text: [
