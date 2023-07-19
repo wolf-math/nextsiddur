@@ -1,6 +1,6 @@
 export const zevachim = {
-  title: 'zevachim',
-  heTitle: 'זבחים',
+  tractate: 'zevachim',
+  masechta: 'זבחים',
   seder: 'kodashim',
   heSeder: 'קודשים',
   text: [

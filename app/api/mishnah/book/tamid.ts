@@ -1,6 +1,6 @@
 export const tamid = {
-  title: 'tamid',
-  heTitle: 'תמיד',
+  tractate: 'tamid',
+  masechta: 'תמיד',
   seder: 'kodashim',
   heSeder: 'קודשים',
   text: [

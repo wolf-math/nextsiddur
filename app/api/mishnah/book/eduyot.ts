@@ -1,6 +1,6 @@
 export const eduyot = {
-  title: 'eduyot',
-  heTitle: 'עדיות',
+  tractate: 'eduyot',
+  masechta: 'עדיות',
   seder: 'nezikin',
   heSeder: 'נזיקין',
   text: [

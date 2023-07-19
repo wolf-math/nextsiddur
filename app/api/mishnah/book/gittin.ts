@@ -1,6 +1,6 @@
 export const gittin = {
-  title: 'gittin',
-  heTitle: 'גיטין',
+  tractate: 'gittin',
+  masechta: 'גיטין',
   seder: 'nashim',
   heSeder: 'נשים',
   text: [

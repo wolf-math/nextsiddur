@@ -1,6 +1,6 @@
 export const yoma = {
-  title: 'yoma',
-  heTitle: 'יומא',
+  tractate: 'yoma',
+  masechta: 'יומא',
   seder: 'moed',
   heSeder: 'מועד',
   text: [

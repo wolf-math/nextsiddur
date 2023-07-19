@@ -1,6 +1,6 @@
 export const pesachim = {
-  title: 'pesachim',
-  heTitle: 'פסחים',
+  tractate: 'pesachim',
+  masechta: 'פסחים',
   seder: 'moed',
   heSeder: 'מועד',
   text: [

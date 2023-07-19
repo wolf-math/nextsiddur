@@ -1,6 +1,6 @@
 export const bavaBatra = {
-  title: 'bava batra',
-  heTitle: 'בבא בתרא',
+  tractate: 'bava batra',
+  masechta: 'בבא בתרא',
   seder: 'nezikin',
   heSeder: 'נזיקין',
   text: [

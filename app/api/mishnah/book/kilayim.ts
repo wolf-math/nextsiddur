@@ -1,6 +1,6 @@
 export const kilayim = {
-  title: 'kilayim',
-  heTitle: 'כלאים',
+  tractate: 'kilayim',
+  masechta: 'כלאים',
   seder: 'zeraim',
   heSeder: 'זרעים',
   text: [

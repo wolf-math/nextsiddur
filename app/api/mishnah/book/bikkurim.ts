@@ -1,6 +1,6 @@
 export const bikkurim = {
-  title: 'bikkurim',
-  heTitle: 'ביכורים',
+  tractate: 'bikkurim',
+  masechta: 'ביכורים',
   seder: 'zeraim',
   heSeder: 'זרעים',
   text: [

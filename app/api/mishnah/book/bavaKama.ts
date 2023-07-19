@@ -1,6 +1,6 @@
 export const bavaKama = {
-  title: 'bava kamma',
-  heTitle: 'בבא קמא',
+  tractate: 'bava kamma',
+  masechta: 'בבא קמא',
   seder: 'nezikin',
   heSeder: 'נזיקין',
   text: [

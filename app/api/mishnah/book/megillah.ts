@@ -1,6 +1,6 @@
 export const megillah = {
-  title: 'Mishnah Megillah',
-  heTitle: 'משנה מגילה',
+  tractate: 'megillah',
+  masechta: 'מגילה',
   seder: 'moed',
   heSeder: 'מועד',
   text: [

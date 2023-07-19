@@ -1,6 +1,6 @@
 export const eruvin = {
-  title: 'eruvin',
-  heTitle: 'עירובין',
+  tractate: 'eruvin',
+  masechta: 'עירובין',
   seder: 'moed',
   heSeder: 'מועד',
   text: [

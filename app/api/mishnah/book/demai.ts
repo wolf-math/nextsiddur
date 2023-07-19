@@ -1,6 +1,6 @@
 export const demai = {
-  title: 'Mishnah Demai',
-  heTitle: 'משנה דמאי',
+  tractate: 'Mishnah Demai',
+  masechta: 'משנה דמאי',
   seder: 'zeraim',
   heSeder: 'זרעים',
   text: [

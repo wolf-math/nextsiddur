@@ -1,6 +1,6 @@
 export const tahorot = {
-  title: 'tahorot',
-  heTitle: 'טהרות',
+  tractate: 'tahorot',
+  masechta: 'טהרות',
   seder: 'taharot',
   heSeder: 'טהרות',
   text: [

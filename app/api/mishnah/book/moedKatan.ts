@@ -1,6 +1,6 @@
 export const moedKatan = {
-  title: 'moed katan',
-  heTitle: 'מועד קטן',
+  tractate: 'moed katan',
+  masechta: 'מועד קטן',
   seder: 'moed',
   heSeder: 'מועד',
   text: [

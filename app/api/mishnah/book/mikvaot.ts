@@ -1,6 +1,6 @@
 export const mikvaot = {
-  title: 'mikvaot',
-  heTitle: 'מקואות',
+  tractate: 'mikvaot',
+  masechta: 'מקואות',
   seder: 'taharot',
   heSeder: 'טהרות',
   text: [

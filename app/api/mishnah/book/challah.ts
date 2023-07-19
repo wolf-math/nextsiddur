@@ -1,6 +1,6 @@
 export const challah = {
-  title: 'challah',
-  heTitle: 'חלה',
+  tractate: 'challah',
+  masechta: 'חלה',
   seder: 'zeraim',
   heSeder: 'זרעים',
   text: [

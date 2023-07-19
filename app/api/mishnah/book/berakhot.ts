@@ -1,6 +1,6 @@
 export const berakhot = {
-  title: 'berakhot',
-  heTitle: 'ברכות',
+  tractate: 'berakhot',
+  masechta: 'ברכות',
   seder: 'zeraim',
   heSeder: 'זרעים',
   text: [

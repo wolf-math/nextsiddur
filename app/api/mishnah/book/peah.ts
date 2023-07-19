@@ -1,6 +1,6 @@
 export const peah = {
-  title: 'peah',
-  heTitle: 'פאה',
+  tractate: 'peah',
+  masechta: 'פאה',
   seder: 'zeraim',
   heSeder: 'זרעים',
   text: [

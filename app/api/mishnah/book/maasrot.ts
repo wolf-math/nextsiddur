@@ -1,6 +1,6 @@
 export const maasrot = {
-  title: 'maasrot',
-  heTitle: 'מעשרות',
+  tractate: 'maasrot',
+  masechta: 'מעשרות',
   seder: 'zeraim',
   heSeder: 'זרעים',
   text: [

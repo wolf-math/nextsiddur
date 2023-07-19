@@ -1,6 +1,6 @@
 export const chagigah = {
-  title: 'chagigah',
-  heTitle: 'חגיגה',
+  tractate: 'chagigah',
+  masechta: 'חגיגה',
   seder: 'moed',
   heSeder: 'מועד',
   text: [

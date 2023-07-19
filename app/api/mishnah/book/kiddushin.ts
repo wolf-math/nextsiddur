@@ -1,6 +1,6 @@
 export const kiddushin = {
-  title: 'kiddushin',
-  heTitle: 'קידושין',
+  tractate: 'kiddushin',
+  masechta: 'קידושין',
   seder: 'nashim',
   heSeder: 'נשים',
   text: [

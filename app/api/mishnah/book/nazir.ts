@@ -1,6 +1,6 @@
 export const nazir = {
-  title: 'nazir',
-  heTitle: 'נזיר',
+  tractate: 'nazir',
+  masechta: 'נזיר',
   seder: 'nashim',
   heSeder: 'נשים',
   text: [

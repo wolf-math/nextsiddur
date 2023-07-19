@@ -1,6 +1,6 @@
 export const nedarim = {
-  title: 'nedarim',
-  heTitle: 'נדרים',
+  tractate: 'nedarim',
+  masechta: 'נדרים',
   seder: 'nashim',
   heSeder: 'נשים',
   text: [

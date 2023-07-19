@@ -1,6 +1,6 @@
 export const sheviit = {
-  title: 'sheviit',
-  heTitle: 'שביעית',
+  tractate: 'sheviit',
+  masechta: 'שביעית',
   seder: 'zeraim',
   heSeder: 'זרעים',
   text: [

@@ -1,6 +1,6 @@
 export const kinnim = {
-  title: 'kinnim',
-  heTitle: 'קינים',
+  tractate: 'kinnim',
+  masechta: 'קינים',
   seder: 'kodashim',
   heSeder: 'קודשים',
   text: [

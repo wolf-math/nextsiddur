@@ -1,6 +1,6 @@
 export const shabbat = {
-  title: 'shabbat',
-  heTitle: 'שבת',
+  tractate: 'shabbat',
+  masechta: 'שבת',
   seder: 'moed',
   heSeder: 'מועד',
   text: [

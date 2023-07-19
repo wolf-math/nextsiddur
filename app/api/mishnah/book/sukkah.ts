@@ -1,6 +1,6 @@
 export const sukkah = {
-  title: 'sukkah',
-  heTitle: 'סוכה',
+  tractate: 'sukkah',
+  masechta: 'סוכה',
   seder: 'moed',
   heSeder: 'מועד',
   text: [

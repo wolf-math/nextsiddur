@@ -1,6 +1,6 @@
 export const niddah = {
-  title: 'niddah',
-  heTitle: 'נדה',
+  tractate: 'niddah',
+  masechta: 'נדה',
   seder: 'taharot',
   heSeder: 'טהרות',
   text: [

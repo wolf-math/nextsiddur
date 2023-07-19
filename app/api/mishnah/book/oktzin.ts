@@ -1,6 +1,6 @@
 export const oktzin = {
-  title: 'oktzin',
-  heTitle: 'עוקצים',
+  tractate: 'oktzin',
+  masechta: 'עוקצים',
   seder: 'taharot',
   heSeder: 'טהרות',
   text: [

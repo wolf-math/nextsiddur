@@ -1,6 +1,6 @@
 export const temurah = {
-  title: 'temurah',
-  heTitle: 'תמורה',
+  tractate: 'temurah',
+  masechta: 'תמורה',
   seder: 'kodashim',
   heSeder: 'קודשים',
   text: [

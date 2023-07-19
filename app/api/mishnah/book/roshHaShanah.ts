@@ -1,6 +1,6 @@
 export const roshHaShanah = {
-  title: 'Mishnah Rosh Hashanah',
-  heTitle: 'משנה ראש השנה',
+  tractate: 'rosh hashanah',
+  masechta: 'ראש השנה',
   seder: 'moed',
   heSeder: 'מועד',
   text: [

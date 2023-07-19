@@ -1,6 +1,6 @@
 export const bavaMetzia = {
-  title: 'bava metzia',
-  heTitle: 'בבא מציעא',
+  tractate: 'bava metzia',
+  masechta: 'בבא מציעא',
   seder: 'nezikin',
   heSeder: 'נזיקין',
   text: [

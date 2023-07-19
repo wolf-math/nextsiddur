@@ -1,6 +1,6 @@
 export const arakhin = {
-  title: 'arakhin',
-  heTitle: 'ערכין',
+  tractate: 'arakhin',
+  masechta: 'ערכין',
   seder: 'Kodashim',
   heSeder: 'קודשים',
   text: [

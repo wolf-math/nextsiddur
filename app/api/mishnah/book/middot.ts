@@ -1,6 +1,6 @@
 export const middot = {
-  title: 'middot',
-  heTitle: 'מדות',
+  tractate: 'middot',
+  masechta: 'מדות',
   seder: 'kodashim',
   heSeder: 'קודשים',
   text: [

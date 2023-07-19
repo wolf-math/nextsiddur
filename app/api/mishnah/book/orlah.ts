@@ -1,6 +1,6 @@
 export const orlah = {
-  title: 'orlah',
-  heTitle: 'ערלה',
+  tractate: 'orlah',
+  masechta: 'ערלה',
   seder: 'zeraim',
   heSeder: 'זרעים',
   text: [

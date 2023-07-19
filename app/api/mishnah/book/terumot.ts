@@ -1,6 +1,6 @@
 export const terumot = {
-  title: 'terumot',
-  heTitle: 'תרומות',
+  tractate: 'terumot',
+  masechta: 'תרומות',
   seder: 'zeraim',
   heSeder: 'זרעים',
   text: [
